@@ -1,5 +1,6 @@
 # Social-Knowledge-Graph-Papers
 A paper list of the research about social knowledge graph 
+
 另有动态图专题： https://github.com/Cantoria/dynamic-graph-papers/blob/master/README.md
 
 - [Static Graph Representation](#static-graph-representation)
