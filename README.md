@@ -1,21 +1,25 @@
 # Social-Knowledge-Graph-Papers
 A paper list of the research about social knowledge graph 
+另有动态图专题： https://github.com/Cantoria/dynamic-graph-papers/blob/master/README.md
 
 - [Static Graph Representation](#static-graph-representation)
     + [Semi-Supervised Classification with Graph Convolutional Networks](#semi-supervised-classification-with-graph-convolutional-networks)
     + [Inductive representation learning on large graphs](#inductive-representation-learning-on-large-graphs)
-- [Other Related Works](#other-related-works)
-  * [Heterogeneous Graph/Heterogeneous Information Network](#heterogeneous-graph-heterogeneous-information-network)
+- [Heterogeneous Graph/Heterogeneous Information Network](#heterogeneous-graph-heterogeneous-information-network)
+  * [Heterogeneous Graph/Heterogeneous Information Network Representation - 最新综述](#heterogeneous-graph-heterogeneous-information-network-representation-------)
     + [Heterogeneous Network Representation Learning: Survey, Benchmark, Evaluation, and Beyond](#heterogeneous-network-representation-learning--survey--benchmark--evaluation--and-beyond)
-  * [Others](#others)
+    + [Heterogeneous Network Representation Learning](#heterogeneous-network-representation-learning)
+    + [异质信息网络分析与应用综述](#-------------)
+  * [Heterogeneous Graph/Heterogeneous Information Network Representation - 相关前沿研究(2019 -至今)](#heterogeneous-graph-heterogeneous-information-network-representation----------2019-----)
+    + [Heterogeneous Graph Attention Network](#heterogeneous-graph-attention-network)
+    + [Heterogeneous Graph Transformer](#heterogeneous-graph-transformer)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
+  * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
     + [Foundations and modelling of dynamic networks using Dynamic Graph Neural Networks: A survey](#foundations-and-modelling-of-dynamic-networks-using-dynamic-graph-neural-networks--a-survey)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
     + [Temporal Link Prediction: A Survey](#temporal-link-prediction--a-survey)
-    + [Temporal Networks](#temporal-networks)
-- [New Works of Dynamic Graph Representation (Updating)](#new-works-of-dynamic-graph-representation--updating-)
-    + [Know-Evolve: Deep Temporal Reasoning for Dynamic Knowledge Graphs](#know-evolve--deep-temporal-reasoning-for-dynamic-knowledge-graphs)
+  * [Dynamic Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic-graph-representation-----------2019------)
     + [DYREP: LEARNING REPRESENTATIONS OVER DYNAMIC GRAPHS](#dyrep--learning-representations-over-dynamic-graphs)
     + [Context-Aware Temporal Knowledge Graph Embedding](#context-aware-temporal-knowledge-graph-embedding)
     + [Real-Time Streaming Graph Embedding Through Local Actions](#real-time-streaming-graph-embedding-through-local-actions)
@@ -31,6 +35,7 @@ A paper list of the research about social knowledge graph
     + [TemporalGAT: Attention-Based Dynamic Graph Representation Learning](#temporalgat--attention-based-dynamic-graph-representation-learning)
     + [Continuous-Time Relationship Prediction in Dynamic Heterogeneous Information Networks](#continuous-time-relationship-prediction-in-dynamic-heterogeneous-information-networks)
     + [Continuous-Time Dynamic Graph Learning via Neural Interaction Processes](#continuous-time-dynamic-graph-learning-via-neural-interaction-processes)
+- [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
 
@@ -67,6 +72,10 @@ A paper list of the research about social knowledge graph
 
 ## Heterogeneous Graph/Heterogeneous Information Network
 异质图/异构图(Heterogeneous Graph) = 异质信息网络(Heterogeneous Information Network)
+
+### Heterogeneous Graph/Heterogeneous Information Network Representation - 最新综述
+该部分包括了异质图的最新综述论文
+
 #### Heterogeneous Network Representation Learning: Survey, Benchmark, Evaluation, and Beyond
 * 作者： Carl Yang, et al.(UIUC韩家炜团队)
 * 发表时间：2020
@@ -81,6 +90,17 @@ A paper list of the research about social knowledge graph
     * PubMed
 * 是否有开源代码：有 https://github.com/yangji9181/HNE
 
+#### Heterogeneous Network Representation Learning
+* 作者： Yuxiao Dong, et al.(UCLA Yizhou Sun 团队)
+* 发表时间：2020
+* 发表于：IJCAI 2020
+* 标签：Heterogeneous Network Reprensentation Learning
+* 概述：本文是UCLA, THU, Microsoft合作的一篇异质图相关研究的综述文章，首先阐述了异质图信息挖掘的含义以及相关研究，并且从传统图嵌入表示和异质图神经网络两个角度阐述了异质图的表示学习，且与知识图谱相关的表示学习工作进行了对比。最后从预训练、多任务学习、动态性等角度对于异质图的研究进行了展望。
+* 链接：http://web.cs.ucla.edu/~yzsun/papers/2020_IJCAI_HIN_Survey.pdf
+* 相关数据集：
+    * OAG
+* 是否有开源代码：有 https://github.com/HeterogeneousGraph
+
 #### 异质信息网络分析与应用综述
 * 作者： Chuan Shi, et al.
 * 发表时间：2020
@@ -90,10 +110,36 @@ A paper list of the research about social knowledge graph
 * 链接：http://www.shichuan.org/doc/94.pdf
 * 是否有开源代码：有 https://github.com/BUPT-GAMMA/OpenHINE
 
+### Heterogeneous Graph/Heterogeneous Information Network Representation - 相关前沿研究(2019 -至今)
+
+#### Heterogeneous Graph Attention Network
+* 作者： Xiao Wang, et al.
+* 发表时间：2019
+* 发表于：WWW 2019
+* 标签：Heterogeneous Network Reprensentation Learning, Hierarchical Attention
+* 概述：本文是异质图与图神经网络结合的一篇研究工作，不同于其他图神经网络直接聚合邻居信息，HAN通过Meta-Path采集到多跳的邻居并据此将异质图同质化再聚合邻居节点，以实现聚合元路径上节点的信息；HAN同时提出分层attention机制，用于衡量不同邻居的权重，以及不同语义(元路径)信息的权重。在以上思路的基础上学习异质图中节点的表示，并且通过节点分类和节点聚类两个下游任务预测模型的有效性，以及分析了模型的可解释性。
+* 链接：http://www.shichuan.org/doc/66.pdf
+* 相关数据集：
+    * DBLP
+    * IMDB
+    * ACM
+* 是否有开源代码：有 https://github.com/Jhy1993/HAN
+
+#### Heterogeneous Graph Transformer
+* 作者： Ziniu Hu, et al.
+* 发表时间：2020
+* 发表于：WWW 2020
+* 标签：Heterogeneous Network Reprensentation Learning, Transformer, Multi-Head Attention
+* 概述：考虑到已有异质图的研究存在以下几点局限：1. 需要人工设计Meta-path；2.无法建模动态信息；3.对于大规模的异质图，缺乏有效的采样方式。针对于以上三点，本文首选给出Meta Relation的概念，直接建模相连的异质节点，基于此设计了类Transformer的网络结构用于图表示学习。考虑到异质图的动态特性，本文提出了RTE编码方式，用于建模异质图的动态演化。考虑到大规模异质图上网络的训练，本文提出了HGSampling方式，用于均匀采样不同类型的节点信息，以实现高效的图表示学习。
+* 链接：https://arxiv.org/abs/2003.01332
+* 相关数据集：
+    * OAG
+* 是否有开源代码：有 https://github.com/acbull/pyHGT
 
 
 ## Dynamic Graph Representation
-该部分包括综述论文，以及一些动态图表示的传统工作。
+
+### Dynamic Graph Representation -- 最新综述
 
 #### Representation Learning for Dynamic Graphs: A Survey
 * 作者：Seyed Mehran Kazemi, et al. (Borealis AI)
@@ -127,30 +173,7 @@ A paper list of the research about social knowledge graph
 * 概述：从离散动态图（DTDG）的角度出发，本文针对时态链接预测任务给出了相关定义，并从实现方法的角度出发，构建了时态链接预测的分类体系，分别从矩阵分解/概率模型/谱聚类/时间序列模型/深度学习等不同方法实现的模型进行了比较与论述。文章还列举出了时态链接预测任务的相关数据集（论文互引网络、通讯网络、社交网络、人类交往网络数据等）。最后，文章对时态链接预测任务的难点进行了展望。
 * 链接：https://link.springer.com/article/10.1007%2Fs00354-019-00065-z
 
-
-#### Temporal Networks
-* 作者： Holme P, Saramäki J.
-* 发表时间：2012
-* 发表于：Physics reports, 2012
-* 关键词：时态网络，综述
-* 概述：这篇论文是一篇时态网络的经典综述论文。论文中给出了时态网络的三种形式，并且从时态网络的拓扑结构的衡量方法、将时态数据表示为静态图、时态网络的一些模型、时态网络上的传播动力学和区间模型等进行了论述。最后，文章对时态网络的未来发展趋势进行了展望。
-* 链接：https://link.springer.com/article/10.1007%2Fs00354-019-00065-z
-
-
-## New Works of Dynamic Graph Representation (Updating)
-挑选了动态图表示领域最近2-3年的工作（2017-2020）。
-
-#### Know-Evolve: Deep Temporal Reasoning for Dynamic Knowledge Graphs
-* 作者： Rakshit Trivedi, et al. (Georgia Institute of Technology)
-* 发表时间：2017
-* 发表于：PMLR 2017
-* 关键词：动态知识图谱
-* 概述：作者提出了一套能够在动态演化知识图谱上学习实体表示随时间动态演化的框架。其中采用了基于强度函数的多变量点过程来建模事实的发生概率。作者在两个real-world数据集上对链接预测、实体预测、时间预测与滑动窗口预测等任务进行了评价，验证了该框架的有效性。该论文可以看作DyRep的前置工作。
-* 链接：https://arxiv.org/pdf/1705.05742.pdf
-* 相关数据集：
-    * GDELT
-    * ICEWS
-* 是否有开源代码：无
+### Dynamic Graph Representation -- 相关前沿研究(2019 - 至今)
 
 #### DYREP: LEARNING REPRESENTATIONS OVER DYNAMIC GRAPHS
 * 作者： Rakshit Trivedi, et al. (Georgia Institute of Technology & DeepMind)
@@ -360,7 +383,9 @@ A paper list of the research about social knowledge graph
 ## Others
 
 ## Related Datasets 
-
+* DBLP
+* OAG
+* IMDB
 * Social Evolution Dataset
 * Github Dataset
 * GDELT (Global data on events, location, and tone)
