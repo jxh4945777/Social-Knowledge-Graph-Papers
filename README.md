@@ -35,7 +35,6 @@ A paper list of the research about social knowledge graph
 - [其他参考资料](#------)
 
 
-
 ## Static Graph Representation
 挑选了引用数较高、知名度较大的一些静态图表示学习的工作。
 
@@ -65,8 +64,9 @@ A paper list of the research about social knowledge graph
     * PPI
 * 是否有开源代码：有
 
-## Other Related Works
-### Heterogeneous Graph/Heterogeneous Information Network
+
+## Heterogeneous Graph/Heterogeneous Information Network
+异质图/异构图(Heterogeneous Graph) = 异质信息网络(Heterogeneous Information Network)
 #### Heterogeneous Network Representation Learning: Survey, Benchmark, Evaluation, and Beyond
 * 作者： Carl Yang, et al.(UIUC韩家炜团队)
 * 发表时间：2020
@@ -79,8 +79,18 @@ A paper list of the research about social knowledge graph
     * Yelp
     * Freebase
     * PubMed
-* 是否有开源代码：有
-### Others
+* 是否有开源代码：有 https://github.com/yangji9181/HNE
+
+#### 异质信息网络分析与应用综述
+* 作者： Chuan Shi, et al.
+* 发表时间：2020
+* 发表于：软件学报
+* 标签：Heterogeneous Information Network
+* 概述：本文是一篇关于异质信息网络的最新中文综述，对于异质信息网络给出了明确的定义，并且对于现有异质信息网络的从网络结构的角度进行了归类，对于异质信息网络表示学习相关的工作也进行了归类为基于图分解的方法、基于随机游走的方法、基于编码器-解码器的方法以及基于图神经网络的方法。同时本文对于异质信息网络的应用进行了叙述，最后对于异质信息网络的发展提出了展望。
+* 链接：http://www.shichuan.org/doc/94.pdf
+* 是否有开源代码：有 https://github.com/BUPT-GAMMA/OpenHINE
+
+
 
 ## Dynamic Graph Representation
 该部分包括综述论文，以及一些动态图表示的传统工作。
@@ -347,6 +357,7 @@ A paper list of the research about social knowledge graph
     * Huabei Trades (Inductive)
 * 是否有开源代码：无
 
+## Others
 
 ## Related Datasets 
 
