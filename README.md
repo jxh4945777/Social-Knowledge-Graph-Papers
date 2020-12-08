@@ -137,6 +137,21 @@ A paper list of the research about social knowledge graph
     * OAG
 * 是否有开源代码：有 https://github.com/acbull/pyHGT
 
+#### An Adaptive Embedding Framework for Heterogeneous Information Networks
+* 作者： Daoyuan Chen, et al.
+* 发表时间：2020
+* 发表于：CIKM 2020
+* 标签：Heterogeneous Information Network, Knowledge Graph, Joint Learning
+* 概述：作为模式十分丰富的异质图之一，知识图谱的表示学习一直是研究的重点之一，本文关注于传统的Trans系列知识图谱表示学习方法没法很好地捕获到高阶(多跳)关系之间节点的相似性，因此设计了一种联合学习的方式，首先通过Trans系列方法学习几点的表示，并且通过类似于(h+r-t)的打分函数进行打分，该分数用于指导图上的随机游走概率(即Trans方法学的越不好，越有可能游走到这些节点)，然后通过Skip-Gram再进行节点表示的优化。同时本文针对于Skip-Gram的游走路径长度，以及窗口大小，设计了一套自适应机制。本框架适用于大多数Trans系列方法，具有很强的灵活性，值得借鉴。
+* 链接：https://dl.acm.org/doi/10.1145/3340531.3411989
+* 相关数据集：
+    * FILM
+    * Cora
+    * Citeseer
+    * WN18
+    * FB15K-237
+* 是否有开源代码：无
+
 
 ## Dynamic Graph Representation
 
