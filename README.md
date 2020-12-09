@@ -396,6 +396,20 @@ A paper list of the research about social knowledge graph
     * Huabei Trades (Inductive)
 * 是否有开源代码：无
 
+### Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)
+#### DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks
+* 作者： Ying Yin, et al.
+* 发表时间：2019
+* 发表于：IEEE Access
+* 标签：CTDG，异质信息，动态信息， random walk
+* 概述：本文同时考虑到图的异质性与动态性，通过构建Historical-Current图将中心节点的历史邻居信息与当前邻居信息进行拼接，并在此基础上进行Random Walk采样，通过Skip-Gram更新节点在当前时间的向量表示。本文在包含时间信息的DBLP和Aminer数据集上通过节点分类的下游任务验证了模型的有效性。
+* 链接：https://ieeexplore.ieee.org/document/8843962
+* 相关数据集：
+    * AMiner
+    * DBLP
+* 是否有开源代码：有
+
+
 ## Others
 
 ## Related Datasets 
