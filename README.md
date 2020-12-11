@@ -1,7 +1,7 @@
 # Social-Knowledge-Graph-Papers
-A paper list of the research about social knowledge graph 
+Research about Social Knowledge Graph
 
-另有动态图专题： https://github.com/Cantoria/dynamic-graph-papers/
+动态图专题： https://github.com/Cantoria/dynamic-graph-papers/
 
 - [Static Graph Representation](#static-graph-representation)
     + [Semi-Supervised Classification with Graph Convolutional Networks](#semi-supervised-classification-with-graph-convolutional-networks)
