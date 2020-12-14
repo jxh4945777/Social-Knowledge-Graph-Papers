@@ -401,7 +401,7 @@ Research about Social Knowledge Graph
 * 作者： Ying Yin, et al.
 * 发表时间：2019
 * 发表于：IEEE Access
-* 标签：CTDG，异质信息，动态信息， random walk
+* 标签：DTDG，异质信息，动态信息， random walk
 * 概述：本文同时考虑到图的异质性与动态性，通过构建Historical-Current图将中心节点的历史邻居信息与当前邻居信息进行拼接，并在此基础上进行Random Walk采样，通过Skip-Gram更新节点在当前时间的向量表示。本文在包含时间信息的DBLP和Aminer数据集上通过节点分类的下游任务验证了模型的有效性。
 * 链接：https://ieeexplore.ieee.org/document/8843962
 * 相关数据集：
@@ -413,7 +413,7 @@ Research about Social Knowledge Graph
 * 作者： Hansheng Xue, et al.
 * 发表时间：2020
 * 发表于：ArXiv
-* 标签：CTDG，异质信息，动态信息， 图神经网络
+* 标签：DTDG，异质信息，动态信息， 图神经网络
 * 概述：本文提出一个能够同时学习图中动态信息和异质信息的框架DyHATR，通过类似于HAN的异质图神经网络建模每个时间步上节点的表示，其中通过分层注意力机制同时关注到聚合信息时不同节点的重要性，以及不同Meta-path的重要性。在对于每个时间切片图中学到节点的表示基础上，通过RNN来建模节点表示的演化。本文通过Link Prediction实验验证了模型的有效性。
 * 链接：https://ieeexplore.ieee.org/document/8843962
 * 相关数据集：
@@ -421,6 +421,19 @@ Research about Social Knowledge Graph
     * Math-Overflow
     * Ecomm
 * 是否有开源代码：有(https://github.com/skx300/DyHATR)
+
+#### Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity
+* 作者： Xiao Wang, et al.
+* 发表时间：2020
+* 发表于：TKDE
+* 标签：DTDG，异质信息，动态信息， 矩阵分解
+* 概述：对于动态异质图，本文提出一种新的增量式更新方法，用于在考虑图演化的情况下节点向量表示的更新。首先本文对于静态异质图的表示学习，提出了新的StHNE模型，能够同时考虑到一阶邻居相似性以及二阶邻居相似性用于作为节点表示的参照；在此基础上，对于动态演化的异质图，本文提出DyHNE模型，将图的演化转化成特征值和特征向量的变化，并且据此提出了一套新的增量式更新的方法，用于更新节点的表示。本文通过节点分类以及关系预测验证了模型的有效性。
+* 链接：https://yuanfulu.github.io/publication/TKDE-DyHNE.pdf
+* 相关数据集：
+    * Yelp
+    * DBLP
+    * AMiner
+* 是否有开源代码：有(https://github.com/rootlu/DyHNE)
 
 
 ## Others
