@@ -14,6 +14,7 @@ Research about Social Knowledge Graph
   * [Heterogeneous Graph/Heterogeneous Information Network Representation - 相关前沿研究(2019 -至今)](#heterogeneous-graph-heterogeneous-information-network-representation----------2019-----)
     + [Heterogeneous Graph Attention Network](#heterogeneous-graph-attention-network)
     + [Heterogeneous Graph Transformer](#heterogeneous-graph-transformer)
+    + [An Adaptive Embedding Framework for Heterogeneous Information Networks](#an-adaptive-embedding-framework-for-heterogeneous-information-networks)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
@@ -36,9 +37,14 @@ Research about Social Knowledge Graph
     + [TemporalGAT: Attention-Based Dynamic Graph Representation Learning](#temporalgat--attention-based-dynamic-graph-representation-learning)
     + [Continuous-Time Relationship Prediction in Dynamic Heterogeneous Information Networks](#continuous-time-relationship-prediction-in-dynamic-heterogeneous-information-networks)
     + [Continuous-Time Dynamic Graph Learning via Neural Interaction Processes](#continuous-time-dynamic-graph-learning-via-neural-interaction-processes)
+  * [Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic---heterogeneous-graph-representation-----------2019------)
+    + [DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks](#dhne--network-representation-learning-method-for-dynamic-heterogeneous-networks)
+    + [Modeling Dynamic Heterogeneous Network for Link Prediction using Hierarchical Attention with Temporal RNN](#modeling-dynamic-heterogeneous-network-for-link-prediction-using-hierarchical-attention-with-temporal-rnn-1)
+    + [Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity](#dynamic-heterogeneous-information-networkembedding-with-meta-path-based-proximity)
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
+
 
 
 ## Static Graph Representation
