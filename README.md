@@ -120,7 +120,7 @@ Research about Social Knowledge Graph
 ### Heterogeneous Graph/Heterogeneous Information Network Representation - 相关前沿研究(2019 -至今)
 
 #### Heterogeneous Graph Attention Network
-* 作者： Xiao Wang, et al.
+* 作者： Xiao Wang, et al. (BUPT 石川团队)
 * 发表时间：2019
 * 发表于：WWW 2019
 * 标签：Heterogeneous Network Reprensentation Learning, Hierarchical Attention
@@ -133,7 +133,7 @@ Research about Social Knowledge Graph
 * 是否有开源代码：有 https://github.com/Jhy1993/HAN
 
 #### Heterogeneous Graph Transformer
-* 作者： Ziniu Hu, et al.
+* 作者： Ziniu Hu, et al. (UCLA Yizhou Sun团队)
 * 发表时间：2020
 * 发表于：WWW 2020
 * 标签：Heterogeneous Network Reprensentation Learning, Transformer, Multi-Head Attention
@@ -144,7 +144,7 @@ Research about Social Knowledge Graph
 * 是否有开源代码：有 https://github.com/acbull/pyHGT
 
 #### An Adaptive Embedding Framework for Heterogeneous Information Networks
-* 作者： Daoyuan Chen, et al.
+* 作者： Daoyuan Chen, et al. (阿里)
 * 发表时间：2020
 * 发表于：CIKM 2020
 * 标签：Heterogeneous Information Network, Knowledge Graph, Joint Learning
@@ -159,7 +159,7 @@ Research about Social Knowledge Graph
 * 是否有开源代码：无
 
 #### Modeling Relational Data with Graph Convolutional Networks
-* 作者： Michael Schlichtkrull, Thomas N. Kipf, et al.
+* 作者： Michael Schlichtkrull, Thomas N. Kipf, et al. (阿姆斯特丹Kipf团队)
 * 发表时间：2018
 * 发表于：ESWC 2018
 * 标签：Knowledge Graph, Multi Relation, Graph Neural Network
@@ -169,6 +169,19 @@ Research about Social Knowledge Graph
     * WN18
     * FB15K-237
 * 是否有开源代码：有(https://github.com/tkipf/relational-gcn)
+
+#### Relation Structure-Aware Heterogeneous Information Network Embedding
+* 作者： Yuanfu Lu, et al. (BUPT 石川团队)
+* 发表时间：2019
+* 发表于：AAAI 2019
+* 标签：Heterogeneous Graph, Relation Structure, Random Walk
+* 概述：本文关注到异质图中不同Meta-path的结构性区别，核心就是将预定义的Meta-path通过统计分析分成两种类型-从属关系/交互关系，对于从属关系，本文计算节点相似度的方法是直接通过欧氏距离；对于交互关系，本文计算节点之间的关系是通过类似于TransE的Translation方法。通过两种不同类型关系的联合学习，最终能够做到考虑不同关系类型(从属/交互)的节点表示。最终本文通过节点聚类、节点分类、连接预测验证了模型的有效性。
+* 链接：https://arxiv.org/abs/1905.08027
+* 相关数据集：
+    * DBLP
+    * Yelp
+    * AMiner
+* 是否有开源代码：有(https://github.com/rootlu/RHINE)
 
 
 ## Dynamic Graph Representation
@@ -801,20 +814,6 @@ Research about Social Knowledge Graph
     * Twitter
 * 是否有开源代码：无
 
-#### Modeling Dynamic Heterogeneous Network for Link Prediction using Hierarchical Attention with Temporal RNN
-* 作者：Hansheng Xue, Luwei Yang, et al.（澳大利亚国立大学, 阿里巴巴）
-* 发表时间：2020.4
-* 发表于：arXiv
-* 标签：动态图表示，异构图，注意力机制，DTDG
-* 概述：本文同时考虑到图的异构性和动态性的特点，对于图的每个时间切片，利用node-level attention和edge-level attention以上两个层次的注意力机制实现异质信息的有效处理，并且通过循环神经网络结合self-attention研究节点embedding的演化特性，并且通过链接预测任务进行试验，验证模型的有效性。
-* 链接：https://arxiv.org/pdf/2004.01024.pdf
-* 相关数据集：
-    * Twitter
-    * Math-Overflow
-    * Ecomm
-    * Alibaba.com
-* 是否有开源代码：有(https://github.com/skx300/DyHATR)
-
 #### DySAT: Deep Neural Representation Learning on Dynamic Graphs via Self-Attention Networks
 * 作者： Aravind Sankar, et al.(UIUC)
 * 发表时间：2020
@@ -843,31 +842,6 @@ Research about Social Knowledge Graph
     * Arxiv HEP-TH (Leskovec and Krevl 2014)  
     * Synthetic Networks (Watts-Strogatz (Newman 2003) random networks)    
 * 是否有开源代码：有(https://github.com/farzana0/EvoNRL)
-
-#### Relationship Prediction in Dynamic Heterogeneous Information Networks
-* 作者： Amin Milani Fard, et al.(New York Institute of Technology)
-* 发表时间：2019
-* 发表于：Advances in Information Retrieval 2019 (4)
-* 标签：DTDG，异质信息
-* 概述：本文在考虑图动态性的同时，考虑图的异质性，认为不同类型节点对之间的关系自然有所区别，因此提出了动态异质图表示学习，并且做了规范定义。并且提出MetaDynaMix 方法，通过meta-path标注每个节点和边的特征，在此基础上通过矩阵分解得到特征向量，并用于计算关系预测时的概率。
-* 链接：https://www.researchgate.net/publication/332257507_Relationship_Prediction_in_Dynamic_Heterogeneous_Information_Networks
-* 相关数据集：
-    * Publication Network (DBLP+ ACM)
-    * Movies Network (IMDB)
-* 是否有开源代码：无
-
-#### Link Prediction on Dynamic Heterogeneous Information Networks
-* 作者： Chao Kong, et al.(Anhui Polytechnic University)
-* 发表时间：2019
-* 发表于：Lecture Notes in Computer Science 2019
-* 标签：DTDG，异质信息，广度学习，图神经网络
-* 概述：本文考虑到动态图相关研究中异质信息缺乏有效的利用，且对于大规模图的表示学习过程中，深度学习方法效率较低，因此提出了一种宽度学习(?)的框架，并且与图神经网络相结合，实现高效的动态异质图表示学习。
-* 链接：https://link.springer.com/chapter/10.1007%2F978-3-030-34980-6_36
-* 相关数据集：
-    * Reddit
-    * Stack Overflow
-    * Ask Ubuntu
-* 是否有开源代码：无
 
 #### TemporalGAT: Attention-Based Dynamic Graph Representation Learning
 * 作者： Ahmed Fathy and Kan Li(Beijing Institute of Technology)
@@ -967,6 +941,30 @@ Research about Social Knowledge Graph
     * AMiner
 * 是否有开源代码：有(https://github.com/rootlu/DyHNE)
 
+#### Relationship Prediction in Dynamic Heterogeneous Information Networks
+* 作者： Amin Milani Fard, et al.(New York Institute of Technology)
+* 发表时间：2019
+* 发表于：Advances in Information Retrieval 2019 (4)
+* 标签：DTDG，异质信息
+* 概述：本文在考虑图动态性的同时，考虑图的异质性，认为不同类型节点对之间的关系自然有所区别，因此提出了动态异质图表示学习，并且做了规范定义。并且提出MetaDynaMix 方法，通过meta-path标注每个节点和边的特征，在此基础上通过矩阵分解得到特征向量，并用于计算关系预测时的概率。
+* 链接：https://www.researchgate.net/publication/332257507_Relationship_Prediction_in_Dynamic_Heterogeneous_Information_Networks
+* 相关数据集：
+    * Publication Network (DBLP+ ACM)
+    * Movies Network (IMDB)
+* 是否有开源代码：无
+
+#### Link Prediction on Dynamic Heterogeneous Information Networks
+* 作者： Chao Kong, et al.(Anhui Polytechnic University)
+* 发表时间：2019
+* 发表于：Lecture Notes in Computer Science 2019
+* 标签：DTDG，异质信息，广度学习，图神经网络
+* 概述：本文考虑到动态图相关研究中异质信息缺乏有效的利用，且对于大规模图的表示学习过程中，深度学习方法效率较低，因此提出了一种宽度学习(?)的框架，并且与图神经网络相结合，实现高效的动态异质图表示学习。
+* 链接：https://link.springer.com/chapter/10.1007%2F978-3-030-34980-6_36
+* 相关数据集：
+    * Reddit
+    * Stack Overflow
+    * Ask Ubuntu
+* 是否有开源代码：无
 
 ## Others
 
