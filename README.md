@@ -40,7 +40,7 @@ Research about Social Knowledge Graph
     + [Continuous-Time Relationship Prediction in Dynamic Heterogeneous Information Networks](#continuous-time-relationship-prediction-in-dynamic-heterogeneous-information-networks)
     + [Continuous-Time Dynamic Graph Learning via Neural Interaction Processes](#continuous-time-dynamic-graph-learning-via-neural-interaction-processes)
     + [A Data-Driven Graph Generative Model for Temporal Interaction Networks](#a-data-driven-graph-generative-model-for-temporal-interaction-networks)
-  * [Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic---heterogeneous-graph-representation-----------2019------)
+  - [Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic---heterogeneous-graph-representation-----------2019------)
     + [DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks](#dhne--network-representation-learning-method-for-dynamic-heterogeneous-networks)
     + [Modeling Dynamic Heterogeneous Network for Link Prediction using Hierarchical Attention with Temporal RNN](#modeling-dynamic-heterogeneous-network-for-link-prediction-using-hierarchical-attention-with-temporal-rnn-1)
     + [Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity](#dynamic-heterogeneous-information-networkembedding-with-meta-path-based-proximity)
@@ -450,7 +450,7 @@ Research about Social Knowledge Graph
 * 是否有开源代码：有 (https://github.com/davidchouzdw/TagGen)
 
 
-### Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)
+## Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)
 #### DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks
 * 作者： Ying Yin, et al.
 * 发表时间：2019
