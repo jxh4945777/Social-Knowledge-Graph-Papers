@@ -17,6 +17,9 @@ Research about Social Knowledge Graph
     + [An Adaptive Embedding Framework for Heterogeneous Information Networks](#an-adaptive-embedding-framework-for-heterogeneous-information-networks)
     + [Modeling Relational Data with Graph Convolutional Networks](#modeling-relational-data-with-graph-convolutional-networks)
     + [Relation Structure-Aware Heterogeneous Information Network Embedding](#relation-structure-aware-heterogeneous-information-network-embedding)
+    + [Fast Attributed Multiplex Heterogeneous Network Embedding](#fast-attributed-multiplex-heterogeneous-network-embedding)
+    + [Genetic Meta-Structure Search for Recommendation on Heterogeneous Information Network](#genetic-meta-structure-search-for-recommendation-on-heterogeneous-information-network)
+    + [Homogenization with Explicit Semantics Preservation for Heterogeneous Information Network](#homogenization-with-explicit-semantics-preservation-for-heterogeneous-information-network)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
@@ -47,6 +50,11 @@ Research about Social Knowledge Graph
     + [Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity](#dynamic-heterogeneous-information-networkembedding-with-meta-path-based-proximity)
     + [Relationship Prediction in Dynamic Heterogeneous Information Networks](#relationship-prediction-in-dynamic-heterogeneous-information-networks-1)
     + [Link Prediction on Dynamic Heterogeneous Information Networks](#link-prediction-on-dynamic-heterogeneous-information-networks-1)
+- [Social Relation Reasoning](#social-relation-reasoning)
+  * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
+    + [TransNet: Translation-Based Network Representation Learning for Social Relation Extraction](#transnet--translation-based-network-representation-learning-for-social-relation-extraction)
+    + [Deep Reasoning with Knowledge Graph for Social Relationship Understanding](#deep-reasoning-with-knowledge-graph-for-social-relationship-understanding)
+    + [Relation Learning on Social Networks with Multi-Modal Graph Edge Variational Autoencoders](#relation-learning-on-social-networks-with-multi-modal-graph-edge-variational-autoencoders)
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
@@ -188,6 +196,47 @@ Research about Social Knowledge Graph
     * AMiner
 * 是否有开源代码：有(https://github.com/rootlu/RHINE)
 
+#### Fast Attributed Multiplex Heterogeneous Network Embedding
+* 作者： Zhijun Liu, et al. 
+* 发表时间：2020
+* 发表于：CIKM 2020
+* 标签：Heterogeneous Graph, Fast Learning
+* 概述：本文考虑到现有异质图表示学习方法从效率角度难以应用于大规模异质图数据上，因此提出了一个新的模型框架FAME，用于快速学习异质图上节点的表示。其主要贡献在于
+提出了一个新的图表示学习方法，使用随机映射的方式代替feature trasformation的方式(即随机删掉部分维度)。实验部分，本文在多个数据集上验证了模型的有效性，无论是从效率上，还是准确率上，都高于现有的Baseline方法。
+* 链接：https://dl.acm.org/doi/10.1145/3340531.3411944
+* 相关数据集：
+    * Alibaba
+    * Amazon
+    * Aminer
+    * IMDB
+* 是否有开源代码：有(https://github.com/ZhijunLiu95/FAME)
+
+#### Genetic Meta-Structure Search for Recommendation on Heterogeneous Information Network
+* 作者： Zhenyu Han, et al. (THU)
+* 发表时间：2020
+* 发表于：CIKM 2020
+* 标签：Heterogeneous Graph, Genetic Algorithm
+* 概述：本文考虑到异质图能够很好地建模推荐系统，但手动设计Meta-Path需要大量的人工，因此需要研究自动发现Meta-Path的方法。受优化问题中遗传算法的启发，本文设计了一个类似于遗传算法的Meta-Structure自动挖掘策略，用于推荐系统。实验部分，本文在Yelp, Douban Movie, Amazon三个数据集上进行了实验验证模型的有效性，同时通过给出Case Study，验证模型能够学习到新的有用的Meta-Structure。
+* 链接：https://dl.acm.org/doi/10.1145/3340531.3412015
+* 相关数据集：
+    * Yelp
+    * Douban
+    * Movie
+    * Amazon
+* 是否有开源代码：有(https://github.com/0oshowero0/GEMS)
+
+#### Homogenization with Explicit Semantics Preservation for Heterogeneous Information Network
+* 作者： Tiancheng Huang, et al. (ZJU)
+* 发表时间：2020
+* 发表于：CIKM 2020
+* 标签：Heterogeneous Graph, Homogenization
+* 概述：本文考虑到现有异质图算法在将图同质化的过程中(例如HAN)忽略了路径上的节点的丰富信息，且损失了大量的原本图中的信息。因此本文从异质图的同质化角度入手，设计了新的表示学习方法，能够使转化同质子图的过程中同时考虑路径上节点的信息。具体来讲，本文首先设定对称的Meta-path作为考虑对象，对于路径中对称的节点衡量其相似性，以此作为Meta-path重要性的参照。实验部分，本文在DBLP, IMDB，Yelp数据集上以节点分类和节点聚类作为任务进行了实验，验证了模型的有效性。
+* 链接：https://dl.acm.org/doi/10.1145/3340531.3412015
+* 相关数据集：
+    * Yelp
+    * IMDB
+    * Yelp
+* 是否有开源代码：有(https://dl.acm.org/doi/10.1145/3340531.3412135)
 
 ## Dynamic Graph Representation
 
@@ -528,6 +577,30 @@ Research about Social Knowledge Graph
     * AMiner
 * 是否有开源代码：有 (https://github.com/thunlp/TransNet)
 
+#### Deep Reasoning with Knowledge Graph for Social Relationship Understanding
+* 作者： ZhouxiaWang, et al. (中山大学)
+* 发表时间：2018
+* 发表于：WWW 2018
+* 标签：Social Relation Reasoning, Computer Vision, Knowledge Graph
+* 概述：本文是一篇计算机视觉领域的文章，核心思想是通过引入知识图谱的概念，用于识别图像中的社交关系。具体来讲，在训练集上，本文首先识别图像中出现的物体，并且根据图片的社交关系Ground Truth标签统计物体与社交关系的共现频率，在此基础上构建背景知识图谱(共两种类型的节点: 物品、社交关系)。在通过训练集构建的背景知识图谱基础上，引入门控图神经网络(GGNN)，用于推理图片对应的社交关系。实验部分，本文在PISC数据集上以社交关系识别作为任务验证了模型的有效性。
+* 链接：http://www.ijcai.org/proceedings/2018/0142.pdf
+* 相关数据集：
+    * PISC
+    * COCO
+* 是否有开源代码：有 (https://github.com/HCPLab-SYSU/SR)
+
+#### Relation Learning on Social Networks with Multi-Modal Graph Edge Variational Autoencoders
+* 作者：Carl Yang, et al. (UIUC韩家炜团队)
+* 发表时间：2019
+* 发表于：WSDM 2020
+* 标签：Relation Learning, Variational AutoEncoder, Social Network
+* 概述：本文关注于社交网络中边的表示学习，考虑到社交信息的多模性、信息的不完整性以及充满噪音，因此本文提出了基于Variational AutoEncoder结构的新社交关系表示学习框架 - RELEARN。其Encoder端通过图神经网络GCN用于将图的结构信息以及节点的属性信息压缩，并且通过MLP学习边的表示，通过VAE概率建模的方式能够提高模型的鲁棒性。对于Decoder端，本文设计了Multi-Decoder机制，即通过Edge的嵌入式表示解码出不同类型的信息(本文解码节点属性信息/图结构信息/节点交互信息)。此外，本文考虑到无监督学习的情况，将节点间社交关系看做概率分布，对于每种社交关系设置了全局的基向量，并且通过基向量的带权加和作为边的最终向量表示。关于实验，本文在DBLP数据集以及LinkedIn数据集上，以节点分类和链接预测作为任务验证了模型的有效性。
+* 链接：https://arxiv.org/abs/1911.05465
+* 相关数据集：
+    * DBLP
+    * LinkedIn
+* 是否有开源代码：有 (https://github.com/yangji9181/RELEARN)
+
 ## Others
 
 ## Related Datasets 
@@ -548,4 +621,3 @@ Research about Social Knowledge Graph
 * Network Repository：http://networkrepository.com/
 
 ## 其他参考资料
-
