@@ -515,6 +515,19 @@ Research about Social Knowledge Graph
     * Ask Ubuntu
 * 是否有开源代码：无
 
+## Social Relation Reasoning
+### Social Relation Reasoning -- 相关前沿研究(2017-至今)
+#### TransNet: Translation-Based Network Representation Learning for Social Relation Extraction
+* 作者： Cunchao Tu, et al.(THUNLP)
+* 发表时间：2017
+* 发表于：IJCAI 2017
+* 标签：Social Relation Extraction, Auto Encoder, Traslation Learning
+* 概述：关注到社交网络中社交关系的表示学习，考虑到社交关系往往隐含在社交交互(文本)中，社交关系复杂且存在复合，难以用单一的标签表示，因此本文首先提出了社交关系抽取(Social Relation Extraction)任务并且给出了形式化的定义，将社交关系看作是多标签的复合(Multi One-hot)。此外本文正对于社交关系抽取，提出了模型TransNet，其核心分为两部分，Auto Encoder部分用于将高维的Multi One-hot向量嵌入至低维空间并且尽可能还原原始信息，类TransE部分用于对于Encoder端得到的社交关系的向量表示进行约束，使其符合(Head + Relation = Tail)的Translation关系。与之对应，模型的Loss Function也分为两部分，分别为AE的重建误差，以及Translation Learning的Score Function。关于实验部分，本文在三种不同规模的Aminer数据集上，以SRE为任务进行了实验验证模型的有效性。
+* 链接：https://www.ijcai.org/proceedings/2017/399
+* 相关数据集：
+    * AMiner
+* 是否有开源代码：有 (https://github.com/thunlp/TransNet)
+
 ## Others
 
 ## Related Datasets 
