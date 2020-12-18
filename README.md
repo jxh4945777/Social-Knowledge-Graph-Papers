@@ -55,11 +55,13 @@ Research about Social Knowledge Graph
     + [TransNet: Translation-Based Network Representation Learning for Social Relation Extraction](#transnet--translation-based-network-representation-learning-for-social-relation-extraction)
     + [Deep Reasoning with Knowledge Graph for Social Relationship Understanding](#deep-reasoning-with-knowledge-graph-for-social-relationship-understanding)
     + [Relation Learning on Social Networks with Multi-Modal Graph Edge Variational Autoencoders](#relation-learning-on-social-networks-with-multi-modal-graph-edge-variational-autoencoders)
-- [Knowledge Graph (TO DO)](#knowledge-graph--to-do-)
+    + [Graph Attention Networks over Edge Content-Based Channels](#graph-attention-networks-over-edge-content-based-channels)
+- [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
+  * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
+  * [Knowledge Graph - 相关前沿研究(\#TODO)](#knowledge-graph------------todo-)
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
-
 
 ## Static Graph Representation
 挑选了引用数较高、知名度较大的一些静态图表示学习的工作。
@@ -602,7 +604,22 @@ Research about Social Knowledge Graph
     * LinkedIn
 * 是否有开源代码：有 (https://github.com/yangji9181/RELEARN)
 
-## Knowledge Graph (TO DO)
+#### Graph Attention Networks over Edge Content-Based Channels
+* 作者：Lu Lin, Hongning Wang.  (Virginia University)
+* 发表时间：2020
+* 发表于：KDD 2020
+* 标签：Edge Representation Learning, Variational AutoEncoder, Social Network
+* 概述：本文同样聚焦于社交网络中边的表示学习，其核心思想在于认为节点之间的交互隐含着多种话题，且占比不同，这种话题能够通过节点之间的交互文本体现，因此本文聚焦于此对于边的信息与表示进行建模。具体来讲，本文提出了新的模型Topic-GCN，通过类似于Multi-Head Attention的方式建模话题之间的分布，用于代替原有的GAT的Attention机制，同时通过VAE去学习边的表示。实验部分，本文在Yelp和StackOverflow数据集上进行了链接预测以及内容预测实验验证模型的有效性。
+* 链接：https://www.kdd.org/kdd2020/accepted-papers/view/graph-attention-networks-over-edge-content-based-channels
+* 相关数据集：
+    * Yelp
+    * StackOverflow
+* 是否有开源代码：有 (https://github.com/Louise-LuLin/topic-gcn)
+
+## Knowledge Graph (\#TODO)
+### Knowledge Graph - 最新综述(\#TODO)
+该部分包括了知识图谱的最新综述论文
+### Knowledge Graph - 相关前沿研究(\#TODO)
 
 ## Others
 
