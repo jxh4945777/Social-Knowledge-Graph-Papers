@@ -20,7 +20,7 @@ Research about Social Knowledge Graph
     + [Fast Attributed Multiplex Heterogeneous Network Embedding](#fast-attributed-multiplex-heterogeneous-network-embedding)
     + [Genetic Meta-Structure Search for Recommendation on Heterogeneous Information Network](#genetic-meta-structure-search-for-recommendation-on-heterogeneous-information-network)
     + [Homogenization with Explicit Semantics Preservation for Heterogeneous Information Network](#homogenization-with-explicit-semantics-preservation-for-heterogeneous-information-network)
-    + [Homogenization with Explicit Semantics Preservation for Heterogeneous Information Network](#homogenization-with-explicit-semantics-preservation-for-heterogeneous-information-network-1)
+    + [Heterogeneous Graph Structure Learning for Graph Neural Networks](#heterogeneous-graph-structure-learning-for-graph-neural-networks)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
@@ -63,6 +63,7 @@ Research about Social Knowledge Graph
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
+
 
 ## Static Graph Representation
 挑选了引用数较高、知名度较大的一些静态图表示学习的工作。
@@ -242,7 +243,7 @@ Research about Social Knowledge Graph
     * DBLP
 * 是否有开源代码：有(https://dl.acm.org/doi/10.1145/3340531.3412135)
 
-#### Homogenization with Explicit Semantics Preservation for Heterogeneous Information Network
+#### Heterogeneous Graph Structure Learning for Graph Neural Networks
 * 作者： Jianan Zhao, et al. (BUPT石川团队)
 * 发表时间：2021
 * 发表于：AAAI 2021
