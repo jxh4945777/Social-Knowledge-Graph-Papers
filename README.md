@@ -248,7 +248,7 @@ Research about Social Knowledge Graph
 * 发表时间：2021
 * 发表于：AAAI 2021
 * 标签：Heterogeneous Graph, Structure Learning, Graph Neural Network
-* 概述：本文关注于现实世界中异质图是存在噪音和缺失的现象，因此针对于此首次提出异质图结构学习的相关工作，希望通过建模异质图的节点特征和已有图的拓补结构特征，能够学习到新的异质图结构，实现对于现有异质图缺失的结构的补充。具体来讲，本文提出了异质图结构学习模型HGSL，首先根据节点的特征信息以及邻居信息(度量节点相似度，并连接相似节点生成Feature Similarity Graph -> 对于连接的节点间的邻居也进行连接 生成两个Feature Propagation Graph -> 通过Attention机制将三个生成的图进行融合)得到Feature Graph，然后根据Meta-path的链接情况生成多个子图(根据Metapath2Vec)并且进行融合得到Semantic Graph，最终对于Feature Graph与Semantic Graph进行融合得到新的异质图结构，实现了缺失结构信息的学习与补充。实验部分，本文在DBLP, ACM, Yelp数据集上以节点分类为任务验证了模型的有效性，并且进行了相关分析。
+* 概述：本文关注于现实世界中异质图是存在噪音和缺失的现象，因此针对于此首次提出异质图结构学习的相关工作，希望通过建模异质图的节点特征和已有图的拓补结构特征，能够学习到新的异质图结构，实现对于现有异质图缺失的结构的补充。具体来讲，本文提出了异质图结构学习模型HGSL，首先根据节点的特征信息以及邻居信息(对于关系r, 度量节点相似度，并连接相似节点生成Feature Similarity Graph -> 对于连接的节点间的邻居也进行连接 生成两个Feature Propagation Graph -> 通过Attention机制将三个生成的图进行融合)得到Feature Graph，然后对于关系r, 根据不同Meta-path利用Metapath2Vec学到的向量表示用于度量节点相似度，并生成多个子图，融合得到Semantic Graph，最终对于Feature Graph与Semantic Graph进行融合得到新的异质图结构，实现了缺失结构信息的学习与补充。实验部分，本文在DBLP, ACM, Yelp数据集上以节点分类为任务验证了模型的有效性，并且进行了相关分析。
 * 链接：https://github.com/Andy-Border/HGSL/tree/main/paper
 * 相关数据集：
     * Yelp
