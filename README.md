@@ -59,11 +59,11 @@ Research about Social Knowledge Graph
     + [Graph Attention Networks over Edge Content-Based Channels](#graph-attention-networks-over-edge-content-based-channels)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
+    + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications-1)
   * [Knowledge Graph - 相关前沿研究(\#TODO)](#knowledge-graph------------todo-)
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
-
 
 ## Static Graph Representation
 挑选了引用数较高、知名度较大的一些静态图表示学习的工作。
@@ -633,7 +633,15 @@ Research about Social Knowledge Graph
 
 ## Knowledge Graph (\#TODO)
 ### Knowledge Graph - 最新综述(\#TODO)
-该部分包括了知识图谱的最新综述论文
+#### A Survey on Knowledge Graphs: Representation, Acquisition and Applications
+* 作者：Shaoxiong Ji, Shirui Pan, Erik Cambria, Senior Member, IEEE, Pekka Marttinen, Philip S. Yu, Fellow IEEE
+* 发表时间：2020
+* 发表于：Arxiv
+* 标签：Knowledge Graph, Representation Learning
+* 概述：本文是一篇知识图谱领域的前沿综述，文中给出了知识图谱的具体定义，并且从知识获取、知识表示、动态知识图谱、知识图谱的应用等多个角度围绕知识图谱技术进行了讨论。同时文章还对于知识图谱未来的发展提出了展望。
+* 链接：https://arxiv.org/abs/2002.00388
+* 是否有开源代码：无
+
 ### Knowledge Graph - 相关前沿研究(\#TODO)
 
 ## Others
