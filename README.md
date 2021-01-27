@@ -8,7 +8,7 @@ Research about Social Knowledge Graph
     + [Inductive representation learning on large graphs](#inductive-representation-learning-on-large-graphs)
 - [Heterogeneous Graph/Heterogeneous Information Network Representation](#heterogeneous-graph-heterogeneous-information-network-representation)
   * [Heterogeneous Graph/Heterogeneous Information Network Representation - 最新综述](#heterogeneous-graph-heterogeneous-information-network-representation-------)
-    + [Heterogeneous Network Representation Learning: Survey, Benchmark, Evaluation, and Beyond](#heterogeneous-network-representation-learning--survey--benchmark--evaluation--and-beyond)
+    + [Heterogeneous Network Representation Learning: A Unified Framework with Survey and Benchmark](#heterogeneous-network-representation-learning--a-unified-framework-with-survey-and-benchmark)
     + [Heterogeneous Network Representation Learning](#heterogeneous-network-representation-learning)
     + [异质信息网络分析与应用综述](#-------------)
   * [Heterogeneous Graph/Heterogeneous Information Network Representation - 相关前沿研究(2019 -至今)](#heterogeneous-graph-heterogeneous-information-network-representation----------2019-----)
@@ -101,10 +101,10 @@ Research about Social Knowledge Graph
 ### Heterogeneous Graph/Heterogeneous Information Network Representation - 最新综述
 该部分包括了异质图的最新综述论文
 
-#### Heterogeneous Network Representation Learning: Survey, Benchmark, Evaluation, and Beyond
+#### Heterogeneous Network Representation Learning: A Unified Framework with Survey and Benchmark
 * 作者： Carl Yang, et al.(UIUC韩家炜团队)
 * 发表时间：2020
-* 发表于：Arxiv
+* 发表于：TKDE
 * 标签：Heterogeneous Network Reprensentation Learning
 * 概述：本文是异质图相关研究的综述文章，系统性地梳理了异质图的经典工作以及前沿工作，将已有工作规范到统一的框架内，且提出了异质图表示学习的Benchmark，并且对于经典的异质图方法进行了复现与评测。
 * 链接：https://arxiv.org/abs/2004.00216
