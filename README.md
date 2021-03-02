@@ -21,11 +21,11 @@ Research about Social Knowledge Graph
     + [Genetic Meta-Structure Search for Recommendation on Heterogeneous Information Network](#genetic-meta-structure-search-for-recommendation-on-heterogeneous-information-network)
     + [Homogenization with Explicit Semantics Preservation for Heterogeneous Information Network](#homogenization-with-explicit-semantics-preservation-for-heterogeneous-information-network)
     + [Heterogeneous Graph Structure Learning for Graph Neural Networks](#heterogeneous-graph-structure-learning-for-graph-neural-networks)
+    + [Learning Intents behind Interactions with Knowledge Graph for Recommendation](#learning-intents-behind-interactions-with-knowledge-graph-for-recommendation)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
     + [Foundations and modelling of dynamic networks using Dynamic Graph Neural Networks: A survey](#foundations-and-modelling-of-dynamic-networks-using-dynamic-graph-neural-networks--a-survey)
-    + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
     + [Temporal Link Prediction: A Survey](#temporal-link-prediction--a-survey)
   * [Dynamic Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic-graph-representation-----------2019------)
     + [DYREP: LEARNING REPRESENTATIONS OVER DYNAMIC GRAPHS](#dyrep--learning-representations-over-dynamic-graphs)
@@ -44,6 +44,7 @@ Research about Social Knowledge Graph
     + [Continuous-Time Relationship Prediction in Dynamic Heterogeneous Information Networks](#continuous-time-relationship-prediction-in-dynamic-heterogeneous-information-networks)
     + [Continuous-Time Dynamic Graph Learning via Neural Interaction Processes](#continuous-time-dynamic-graph-learning-via-neural-interaction-processes)
     + [A Data-Driven Graph Generative Model for Temporal Interaction Networks](#a-data-driven-graph-generative-model-for-temporal-interaction-networks)
+    + [Motif-Preserving Temporal Network Embedding](#motif-preserving-temporal-network-embedding)
 - [Dynamic & Heterogeneous Graph Representation](#dynamic---heterogeneous-graph-representation)
   * [Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic---heterogeneous-graph-representation-----------2019------)
     + [DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks](#dhne--network-representation-learning-method-for-dynamic-heterogeneous-networks)
@@ -59,7 +60,7 @@ Research about Social Knowledge Graph
     + [Graph Attention Networks over Edge Content-Based Channels](#graph-attention-networks-over-edge-content-based-channels)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
-    + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications-1)
+    + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
   * [Knowledge Graph - 相关前沿研究(\#TODO)](#knowledge-graph------------todo-)
 - [Others](#others)
 - [Related Datasets](#related-datasets)
@@ -256,6 +257,19 @@ Research about Social Knowledge Graph
     * DBLP
 * 是否有开源代码：有(https://github.com/Andy-Border/HGSL)
 
+#### Learning Intents behind Interactions with Knowledge Graph for Recommendation
+* 作者： Xiang Wang, et al. (新加坡国立、浙大、eBay)
+* 发表时间：2021
+* 发表于：WWW 2021
+* 标签：Heterogeneous Graph, Knowledge Graph, Recommendation System, Graph Neural Network
+* 概述：本文是一篇对于用户内容推荐算法的研究，对于User-Item的内容推荐，以往工作未考虑到其间存在的用户的意图(Intent)，因此本文定义了用户的意图，即user-intent-item，并且对此提出了Knowledge Graph Intent Graph，用KG中的relation集合来代表intent；并针对性地提出了GNN-based Method - KGIG，主要包括结合Intent的用户信息建模，以及考虑多跳异质关系路径的信息聚合，用于精准用户内容推荐。本文在三个数据集上验证了模型的有效性，且给出了全面地分析。
+* 链接：https://arxiv.org/abs/2102.07057
+* 相关数据集：
+    * Amazon-Book
+    * Last-FM
+    * Alibaba-iFashion
+* 是否有开源代码：有(https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network)
+
 ## Dynamic Graph Representation
 
 ### Dynamic Graph Representation -- 最新综述
@@ -275,14 +289,6 @@ Research about Social Knowledge Graph
 * 标签：动态图表示，综述，动态图神经网络
 * 概述：该文侧重于从图神经网络的角度与具体任务的角度去讲述目前动态网络的研究方向。在第二章中，作者将动态图的有关定义整理为体系，从3个维度（时态粒度、节点动态性、边持续的时间）上，分别定义了8种动态网络的定义。在第三章中，阐述了编码动态网络拓扑结构的深度学习模型；在第四章中，阐述了被编码的动态网络信息如何用于预测，即动态网络的解码器、损失函数、评价指标等。在最后一章，作者阐述了动态图表示、建模的一些挑战，并对未来的发展方向进行了展望。
 * 链接：https://arxiv.org/abs/2005.07496
-
-#### A Survey on Knowledge Graphs: Representation, Acquisition and Applications
-* 作者： Shaoxiong Ji, et al.
-* 发表时间：2020
-* 发表于：Expert Systems with Applications, 2020
-* 关键词：知识图谱，综述
-* 概述：本文从知识的表示学习、知识获取，**时态知识图谱**以及知识感知应用等方面做了阐述，内容全面又不失深度，值得一读。
-* 链接：https://arxiv.org/pdf/2002.00388.pdf
 
 #### Temporal Link Prediction: A Survey
 * 作者： Divakaran A, et al.
@@ -359,7 +365,6 @@ Research about Social Knowledge Graph
     * Hep-th Dataset
     * AS Dataset
 * 是否有开源代码：有(https://github.com/palash1992/DynamicGEM)
-
 
 #### EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs
 * 作者： Aldo Pareja, et al.(MIT-IBM Watson AI Lab)
@@ -516,6 +521,20 @@ Research about Social Knowledge Graph
     * MSG
     * BITCOIN
 * 是否有开源代码：有 (https://github.com/davidchouzdw/TagGen)
+
+#### Motif-Preserving Temporal Network Embedding
+* 作者： Hong Huang, et al.(hust)
+* 发表时间：2020
+* 发表于：IJCAI 2020
+* 标签：CTDG，motif，hawkes
+* 概述：本论文采用了一种meso-dynamics的建模方法，通过一种时序网络上的motif——open triad，考虑三个节点之间的triad结构，利用Hawkes过程建模节点对之间的密度函数，来学习时态网络中的embedding。论文在节点分类、链接预测（这一部分实验写的不清楚，不太明白是怎么做的实验）、链接推荐上取得了较好的效果。）
+* 链接：https://www.ijcai.org/Proceedings/2020/0172.pdf
+* 相关数据集：
+    * School 
+    * Digg
+    * Mobile
+    * dblp
+* 是否有开源代码：无
 
 ## Dynamic & Heterogeneous Graph Representation
 ### Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)
