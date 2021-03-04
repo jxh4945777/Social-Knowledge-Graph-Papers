@@ -22,6 +22,7 @@ Research about Social Knowledge Graph
     + [Homogenization with Explicit Semantics Preservation for Heterogeneous Information Network](#homogenization-with-explicit-semantics-preservation-for-heterogeneous-information-network)
     + [Heterogeneous Graph Structure Learning for Graph Neural Networks](#heterogeneous-graph-structure-learning-for-graph-neural-networks)
     + [Learning Intents behind Interactions with Knowledge Graph for Recommendation](#learning-intents-behind-interactions-with-knowledge-graph-for-recommendation)
+    + [MultiSage: Empowering GCN with Contextualized Multi-Embeddings on Web-Scale Multipartite Networks](#multisage--empowering-gcn-with-contextualized-multi-embeddings-on-web-scale-multipartite-networks)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
@@ -263,13 +264,24 @@ Research about Social Knowledge Graph
 * 发表于：WWW 2021
 * 标签：Heterogeneous Graph, Knowledge Graph, Recommendation System, Graph Neural Network
 * 概述：本文是一篇对于用户内容推荐算法的研究，对于User-Item的内容推荐，以往工作未考虑到其间存在的用户的意图(Intent)，因此本文定义了用户的意图，即user-intent-item，并且对此提出了Knowledge Graph Intent Graph，用KG中的relation集合来代表intent；并针对性地提出了GNN-based Method - KGIG，主要包括结合Intent的用户信息建模，以及考虑多跳异质关系路径的信息聚合，用于精准用户内容推荐。本文在三个数据集上验证了模型的有效性，且给出了全面地分析。
+* 链接：https://jiyang3.web.engr.illinois.edu/files/multisage.pdf
+* 相关数据集：
+    * OAG
+    * Printest
+* 是否有开源代码：无
+
+#### MultiSage: Empowering GCN with Contextualized Multi-Embeddings on Web-Scale Multipartite Networks
+* 作者：Carl Yang, Jiawei Han, Jure Leskovec et al. (UIUC韩家炜团队, Standford Jure团队)
+* 发表时间：2020
+* 发表于：KDD 2020
+* 标签：Recommendation System, Graph Neural Network, Web-Scale 
+* 概述：本文是一篇对于用户内容推荐算法的研究，对于内容推荐主要考虑到了背景信息的作用，提出了Contextual Masking机制，用于考虑不同的上下文情下的内容表示，同时利用attention机制比较不同context的重要性差异；除此之外，本文考虑到了工业级的大规模数据推荐，提出了一套解决方案，对于中心节点的邻居，通过parallel pagerank based random walk用于进行邻居采样，然后通过Hadoop2+AWS进行数据的计算。本文在两个大规模数据集(但也是进行了采样并非完整数据集)进行了实验验证模型的有效性。
 * 链接：https://arxiv.org/abs/2102.07057
 * 相关数据集：
     * Amazon-Book
     * Last-FM
     * Alibaba-iFashion
 * 是否有开源代码：有(https://github.com/huangtinglin/Knowledge_Graph_based_Intent_Network)
-
 ## Dynamic Graph Representation
 
 ### Dynamic Graph Representation -- 最新综述
