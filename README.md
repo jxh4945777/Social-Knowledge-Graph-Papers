@@ -45,7 +45,13 @@ Research about Social Knowledge Graph
     + [Continuous-Time Relationship Prediction in Dynamic Heterogeneous Information Networks](#continuous-time-relationship-prediction-in-dynamic-heterogeneous-information-networks)
     + [Continuous-Time Dynamic Graph Learning via Neural Interaction Processes](#continuous-time-dynamic-graph-learning-via-neural-interaction-processes)
     + [A Data-Driven Graph Generative Model for Temporal Interaction Networks](#a-data-driven-graph-generative-model-for-temporal-interaction-networks)
+    + [Embedding Dynamic Attributed Networks by Modeling the Evolution Processes](#embedding-dynamic-attributed-networks-by-modeling-the-evolution-processes)
+    + [Learning to Encode Evolutionary Knowledge for Automatic Commenting Long Novels](#learning-to-encode-evolutionary-knowledge-for-automatic-commenting-long-novels)
+    + [Generic Representation Learning for Dynamic Social Interaction](#generic-representation-learning-for-dynamic-social-interaction)
     + [Motif-Preserving Temporal Network Embedding](#motif-preserving-temporal-network-embedding)
+    + [Local Motif Clustering on Time-Evolving Graphs](#local-motif-clustering-on-time-evolving-graphs)
+    + [INDUCTIVE REPRESENTATION LEARNING ON TEMPORAL GRAPHS](#inductive-representation-learning-on-temporal-graphs)
+    + [INDUCTIVE REPRESENTATION LEARNING IN TEMPORAL NETWORKS VIA CAUSAL ANONYMOUS WALKS](#inductive-representation-learning-in-temporal-networks-via-causal-anonymous-walks)
 - [Dynamic & Heterogeneous Graph Representation](#dynamic---heterogeneous-graph-representation)
   * [Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic---heterogeneous-graph-representation-----------2019------)
     + [DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks](#dhne--network-representation-learning-method-for-dynamic-heterogeneous-networks)
@@ -537,12 +543,51 @@ Research about Social Knowledge Graph
     * BITCOIN
 * 是否有开源代码：有 (https://github.com/davidchouzdw/TagGen)
 
+#### Embedding Dynamic Attributed Networks by Modeling the Evolution Processes
+* 作者： Zenan Xu, et al.
+* 发表时间：2020
+* 发表于：COLING 2020
+* 标签：DTDG，Dynamic Attributed Networks
+* 概述：作者提出了一种可以在动态属性网络进行表示学习的模型Dane，该模型可以在离散的属性动态图上进行表示学习工作。具体地，该模型包括Activeness-aware Neighborhood Embedding与Prediction of the Next-Timestamp Embedding两个模块。第一个模块提出了activeness-aware neighborhood embedding方法，利用了注意力机制，有权重地聚合邻居的不同特征；第二个模块也采用了注意力机制，避免了RNN等模型长距离遗忘的缺点，能够依据节点的历史SNAPSHOT状态学习到不同的权重。作者在动态链接预测与动态节点分类两个任务上进行了实验。
+* 链接：https://www.aclweb.org/anthology/2020.coling-main.600/
+* 相关数据集：
+    * MOOC 
+    * Brain
+    * DBLP
+    * ACM
+* 是否有开源代码：无
+
+#### Learning to Encode Evolutionary Knowledge for Automatic Commenting Long Novels
+* 作者： Canxiang Yan, et al.
+* 发表时间：2020
+* 发表于：arXiv
+* 标签：动态知识图谱，knowledge，DTDG
+* 概述：长篇小说文本的自动评注任务（auto commenting task）需要依据小说文本中提及的人物，以及人物之间的关系，为小说文本自动生成自然语言表述的评注。小说中的人物及人物关系是动态演变的，静态知识图谱无法建模这种演变关系。基于此，作者设计了GraphNovel数据集，提出了演化知识图谱（Evolutionary Knowledge Graph）的框架，为每一章节的人物节点建立关系。给定一段需要评注的小说文本，框架能够整合文本中提及人物节点过去与未来的embedding，并通过一个graph-to-sequence模型生成评注文本。
+* 链接：https://arxiv.org/abs/2004.09974
+* 相关数据集：
+    * GraphNovel
+* 是否有开源代码：无
+
+
+#### Generic Representation Learning for Dynamic Social Interaction
+* 作者： Yanbang Wang, et al.
+* 发表时间：2020
+* 发表于：KDD
+* 标签：时态网络，Dynamic Social Interaction
+* 概述：社交互动（Social interactions）能够反应人类的社会地位与心理状态。社交关系是动态演变的，因此，在一个人群中，人们之间互相的动作能够反应这种模式。传统的方法一般适用人工定义模板的方法作者使用时态网络定义该问题，提出了一种temporal network-diffusion convolution network的方法，并在三个不同的数据集中对三种不同的心理状态进行了预测。
+* 链接：http://www.mlgworkshop.org/2020/papers/MLG2020_paper_6.pdf
+* 相关数据集：
+    * RESISTANCE-1/2/3
+    * ELEA
+* 是否有开源代码：无
+
+
 #### Motif-Preserving Temporal Network Embedding
 * 作者： Hong Huang, et al.(hust)
 * 发表时间：2020
 * 发表于：IJCAI 2020
 * 标签：CTDG，motif，hawkes
-* 概述：本论文采用了一种meso-dynamics的建模方法，通过一种时序网络上的motif——open triad，考虑三个节点之间的triad结构，利用Hawkes过程建模节点对之间的密度函数，来学习时态网络中的embedding。论文在节点分类、链接预测（这一部分实验写的不清楚，不太明白是怎么做的实验）、链接推荐上取得了较好的效果。）
+* 概述：本论文采用了一种meso-dynamics的建模方法，通过一种时序网络上的motif——open triad，考虑三个节点之间的triad结构，利用Hawkes过程建模节点对之间的密度函数，来学习时态网络中的embedding。论文在节点分类、链接预测（这一部分实验写的不清楚，不太明白是怎么做的实验）、链接推荐上取得了较好的效果。
 * 链接：https://www.ijcai.org/Proceedings/2020/0172.pdf
 * 相关数据集：
     * School 
@@ -550,6 +595,53 @@ Research about Social Knowledge Graph
     * Mobile
     * dblp
 * 是否有开源代码：无
+
+
+#### Local Motif Clustering on Time-Evolving Graphs
+* 作者： Dongqi Fu, et al.(UIUC)
+* 发表时间：2020
+* 发表于：KDD 2020
+* 标签：DTDG，motif，cluster
+* 概述：图的motif是研究复杂网络的一种手段，能够揭示图形成的规律。motif clustering通过挖掘图中存在motif的不同形式，寻找图中节点的聚类簇。目前，局部聚类技术（一种聚焦于一组种子节点并为其划分cluster）已经广泛应用于静态图中，但在动态图领域尚未被应用。基于此，作者提出了一种适用于时态演化图（time- evolving graph）的局部motif聚类算法（L-MEGA）。在该算法中，作者设计了edge filtering/motif push operation与incremental sweep cut等技术，提高了算法的性能和效率。
+* 链接：https://dl.acm.org/doi/10.1145/3308560.3316581
+* 相关数据集：
+    * Alpha
+    * OTC
+    * Call
+    * Contact
+* 是否有开源代码：有（https://github.com/DongqiFu/L-MEGA ）
+
+
+
+#### INDUCTIVE REPRESENTATION LEARNING ON TEMPORAL GRAPHS
+* 作者： Da Xu, et al.
+* 发表时间：2020
+* 发表于：ICLR 2020
+* 标签：CTDG，inductive learning
+* 概述：传统动态图表示学习的工作是transductive的，意即只能对训练集中出现过的节点进行表示，无法对unseen nodes进行表示。作者受到静态图中GraphSage、GAT等inductive learning方法的启发，提出了temporal graph attention layer（TGAT）这一结构。该结构使用了通过Bochner定理推导出时态核函数的时态编码模块，建模节点embedding识别为时间的函数，并能够随着图的演化，来有效聚合时态-拓扑邻居特征，从而学习到节点的时态-拓扑邻居聚合函数，使用inductive的方法快速生成节点表示。
+* 链接：https://arxiv.org/abs/2002.07962
+* 相关数据集：
+    * Wikipedia
+    * Reddit
+    * Industrial dataset
+* 是否有开源代码：无
+
+
+#### INDUCTIVE REPRESENTATION LEARNING IN TEMPORAL NETWORKS VIA CAUSAL ANONYMOUS WALKS
+* 作者： Yanbang Wang, et al.(stanford snap团队)
+* 发表时间：2021
+* 发表于：ICLR 2021
+* 标签：CTDG，inductive learning，causal anonymous walk
+* 概述：时态网络的演化是存在一定规律的，如社交网络中存在广泛的三元组闭环规律。作者认为，时态图上的inductive算法应该能够学习到这种规律，并应用至训练阶段未见过的数据中。为了表征这种规律，过滤掉节点特征对学习这种规律的影响，作者提出了基于Causal Anonymous Walks的节点表征方式，能够匿名化采样时态因果路径上的节点信息，从而对采样到的motif进行真正的关注学习。
+* 链接：https://arxiv.org/abs/2101.05974
+* 相关数据集：
+    * Wikipedia
+    * Reddit
+    * MOOC
+    * Social Evolution
+    * Enron
+    * UCI
+* 是否有开源代码：有（https://github.com/snap-stanford/CAW ）
 
 ## Dynamic & Heterogeneous Graph Representation
 ### Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)
