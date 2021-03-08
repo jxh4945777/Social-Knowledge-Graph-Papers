@@ -59,6 +59,8 @@ Research about Social Knowledge Graph
     + [Deep Reasoning with Knowledge Graph for Social Relationship Understanding](#deep-reasoning-with-knowledge-graph-for-social-relationship-understanding)
     + [Relation Learning on Social Networks with Multi-Modal Graph Edge Variational Autoencoders](#relation-learning-on-social-networks-with-multi-modal-graph-edge-variational-autoencoders)
     + [Graph Attention Networks over Edge Content-Based Channels](#graph-attention-networks-over-edge-content-based-channels)
+    + [TransConv: Relationship Embedding in Social Networks](#transconv--relationship-embedding-in-social-networks)
+    + [MERL: Multi-View Edge Representation Learning in Social Networks](#merl--multi-view-edge-representation-learning-in-social-networks)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
@@ -662,6 +664,30 @@ Research about Social Knowledge Graph
     * Yelp
     * StackOverflow
 * 是否有开源代码：有 (https://github.com/Louise-LuLin/topic-gcn)
+
+#### TransConv: Relationship Embedding in Social Networks
+* 作者：Yi-Yu Lai.  (Purdue University)
+* 发表时间：2019
+* 发表于：AAAI 2019
+* 标签：Translation Learning, Social Network
+* 概述：本文希望通过社交网络中的对话建模用户以及其社交关系的Embedding，其首先提出了Conversation Similarity Factor，用于建模用户之间的互相交流是否相似(Sim(A-B, B-A))，再通过Conversation Frequency Factor用于建模用户之间经常对话的主题的权重，并结合Trans模型以及通过不同的关系映射到不同的Hyperplane用于建模用户节点和关系的Embedding，本文在两个现实世界社交网络数据集中，对于图谱补全(Link Prediction)，三元组分类，以及多标签关系分类任务上验证了模型的有效性。但本文的数据集和代码都没有开源，数据集的处理方式较多，较难follow。
+* 链接：https://ojs.aaai.org/index.php/AAAI/article/download/4314/4192
+* 相关数据集：
+    * Twitter
+    * Facebook
+* 是否有开源代码：无
+
+#### MERL: Multi-View Edge Representation Learning in Social Networks
+* 作者：Yi-Yu Lai.  (Purdue University)
+* 发表时间：2020
+* 发表于：CIKM 2020
+* 标签：Edge Representation Learning, Multi-View, Social Network
+* 概述：本文认为社交网络中包含多种关系，且社交关系十分重要，但现有的工作仅仅通过拼接节点的embedding来代表社交关系的embedding，缺少对于社交关系的方向性的区分；且社交关系往往包含着多种类型的边，且通过多种上下文来体现。基于此，本文提出模型MERL关注到了节点对之间的关系及其对话的不对称关系；与此同时，本文结合用户之间的对话文本信息用于建模社交关系。同样在两个社交网络数据集上验证了模型的有效性并且给出了详细的分析。本文可以认为是TransConv的一篇延展性工作，其中使用到了TransConv中的两个factor。与TransConv相同，本文没有开源数据集和代码，较难follow。
+* 链接：https://dl.acm.org/doi/abs/10.1145/3340531.3412049
+* 相关数据集：
+    * Twitter
+    * Facebook
+* 是否有开源代码：无
 
 ## Knowledge Graph (\#TODO)
 ### Knowledge Graph - 最新综述(\#TODO)
