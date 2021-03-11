@@ -23,6 +23,7 @@ Research about Social Knowledge Graph
     + [Heterogeneous Graph Structure Learning for Graph Neural Networks](#heterogeneous-graph-structure-learning-for-graph-neural-networks)
     + [Learning Intents behind Interactions with Knowledge Graph for Recommendation](#learning-intents-behind-interactions-with-knowledge-graph-for-recommendation)
     + [MultiSage: Empowering GCN with Contextualized Multi-Embeddings on Web-Scale Multipartite Networks](#multisage--empowering-gcn-with-contextualized-multi-embeddings-on-web-scale-multipartite-networks)
+    + [RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding](#rhine--relation-structure-aware-heterogeneous-information-network-embedding)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
@@ -290,6 +291,20 @@ Research about Social Knowledge Graph
     * OAG
     * Printest
 * 是否有开源代码：无
+
+#### RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding
+* 作者： Chuan Shi, et al. (BUPT& THU)
+* 发表时间：2020
+* 发表于：TKDE 2020
+* 标签：heterogeneous information network, relation structure
+* 概述：本文是一篇基于Meta-path随机游走的工作，主要创新点在于对于Meta-path分成了两类，即(从属/交互)，对于从属关系，本文考虑通过欧氏距离度量相似性，对于交互关系，本文考虑通过TransE类似的Translation进行建模。
+* 链接：https://ieeexplore.ieee.org/abstract/document/9050490
+* 相关数据集：
+    * DBLP
+    * Yelp
+    * AMiner
+    * Amazon
+* 是否有开源代码：有( https://github.com/rootlu/RHINE )
 
 ## Dynamic Graph Representation
 
@@ -610,8 +625,6 @@ Research about Social Knowledge Graph
     * Call
     * Contact
 * 是否有开源代码：有（https://github.com/DongqiFu/L-MEGA ）
-
-
 
 #### INDUCTIVE REPRESENTATION LEARNING ON TEMPORAL GRAPHS
 * 作者： Da Xu, et al.
