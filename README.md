@@ -54,7 +54,8 @@ Research about Social Knowledge Graph
     + [INDUCTIVE REPRESENTATION LEARNING ON TEMPORAL GRAPHS](#inductive-representation-learning-on-temporal-graphs)
     + [INDUCTIVE REPRESENTATION LEARNING IN TEMPORAL NETWORKS VIA CAUSAL ANONYMOUS WALKS](#inductive-representation-learning-in-temporal-networks-via-causal-anonymous-walks)
 - [Dynamic & Heterogeneous Graph Representation](#dynamic---heterogeneous-graph-representation)
-  * [Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic---heterogeneous-graph-representation-----------2019------)
+  * [Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2015 - 至今)](#dynamic---heterogeneous-graph-representation-----------2015------)
+    + [基于动态异构信息网络的时序关系预测](#-----------------)
     + [DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks](#dhne--network-representation-learning-method-for-dynamic-heterogeneous-networks)
     + [Modeling Dynamic Heterogeneous Network for Link Prediction using Hierarchical Attention with Temporal RNN](#modeling-dynamic-heterogeneous-network-for-link-prediction-using-hierarchical-attention-with-temporal-rnn-1)
     + [Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity](#dynamic-heterogeneous-information-networkembedding-with-meta-path-based-proximity)
@@ -657,7 +658,20 @@ Research about Social Knowledge Graph
 * 是否有开源代码：有（https://github.com/snap-stanford/CAW ）
 
 ## Dynamic & Heterogeneous Graph Representation
-### Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2019 - 至今)
+### Dynamic & Heterogeneous Graph Representation -- 相关前沿研究(2015 - 至今)
+
+#### 基于动态异构信息网络的时序关系预测
+* 作者： Zeya Zhao, et al. (ICT, CAS)
+* 发表时间：2015
+* 发表于：计算机研究与发展
+* 标签：动态信息，异质信息，回归模型
+* 概述：本文首先提出了时间差路径的概念，将关系的时间信息融入到网络上的关系路径中，后将时间信息和结构信息整合，提出了时间差关系路径法(TDLP)，将网络中边上的时间信息融入到结构路径中，具体来讲通过随机游走采样符合指定路径与时间模式的样例用于训练逻辑回归模型，然后基于该训练好的模型做时序关系预测，本文在自构建的动态学术数据集上进行实验，验证了模型的有效性。
+* 链接：http://crad.ict.ac.cn/CN/10.7544/issn1000-1239.2015.20150183
+* 相关数据集：
+    * DBLP
+* 是否有开源代码：无
+
+
 #### DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks
 * 作者： Ying Yin, et al.
 * 发表时间：2019
