@@ -76,6 +76,8 @@ Research about Social Knowledge Graph
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
+  * [图神经网络相关学习/参考资料：](#---------------)
+    + [图与机器学习课程](#--------)
 
 ## Static Graph Representation
 挑选了引用数较高、知名度较大的一些静态图表示学习的工作。
@@ -841,3 +843,7 @@ Research about Social Knowledge Graph
 * Network Repository：http://networkrepository.com/
 
 ## 其他参考资料
+### 图神经网络相关学习/参考资料：
+#### 图与机器学习课程
+* 简介：斯坦福开设的本科课程，Jure Leskovec担任课程顾问。
+* 链接：http://web.stanford.edu/class/cs224w/
