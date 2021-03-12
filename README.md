@@ -3,6 +3,8 @@ Research about Social Knowledge Graph
 
 动态图专题： https://github.com/Cantoria/dynamic-graph-papers/
 
+**【目录】**
+
 - [Static Graph Representation](#static-graph-representation)
     + [Semi-Supervised Classification with Graph Convolutional Networks](#semi-supervised-classification-with-graph-convolutional-networks)
     + [Inductive representation learning on large graphs](#inductive-representation-learning-on-large-graphs)
@@ -69,6 +71,7 @@ Research about Social Knowledge Graph
     + [Graph Attention Networks over Edge Content-Based Channels](#graph-attention-networks-over-edge-content-based-channels)
     + [TransConv: Relationship Embedding in Social Networks](#transconv--relationship-embedding-in-social-networks)
     + [MERL: Multi-View Edge Representation Learning in Social Networks](#merl--multi-view-edge-representation-learning-in-social-networks)
+    + [Graph Convolutional Networks on User Mobility Heterogeneous Graphs for Social Relationship Inference](#graph-convolutional-networks-on-user-mobility-heterogeneous-graphs-for-social-relationship-inference)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
@@ -78,6 +81,9 @@ Research about Social Knowledge Graph
 - [其他参考资料](#------)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
+
+
+**【具体文献以及笔记】**
 
 ## Static Graph Representation
 挑选了引用数较高、知名度较大的一些静态图表示学习的工作。
@@ -95,6 +101,8 @@ Research about Social Knowledge Graph
     * Pubmed
     * NELL
 * 是否有开源代码：有
+
+
 #### Inductive representation learning on large graphs
 * 作者： Hamilton W, et al.(斯坦福大学Leskovec团队)
 * 发表时间：2017
@@ -809,6 +817,19 @@ Research about Social Knowledge Graph
     * Twitter
     * Facebook
 * 是否有开源代码：无
+
+#### Graph Convolutional Networks on User Mobility Heterogeneous Graphs for Social Relationship Inference
+* 作者：Yongji Wu.  (USTC)
+* 发表时间：2019
+* 发表于：IJCAI 2019
+* 标签：Heterogeneous Graph, Graph Neural Networks, User Mobility
+* 概述：本文关注于利用人物的轨迹信息推理社交关系，其认为以往基于手工特征的推理方法难以有效挖掘人物与轨迹之间的深层关系，且没有关注到除了人物节点之外的地点节点，因此本文首先基于User和Location两类节点构建了异质图，在此基础上设计(类似于R-GCN)的异质图神经网络用于推理人物之间的关系，并在三个现实世界数据集上验证了模型的有效性。
+* 链接：https://www.ijcai.org/Proceedings/2019/0541.pdf
+* 相关数据集：
+    * Gowalla 
+    * Brightkite
+    * Foursquare
+* 是否有开源代码：有( https://github.com/libertyeagle/gcn mobility relationship )
 
 ## Knowledge Graph (\#TODO)
 ### Knowledge Graph - 最新综述(\#TODO)
