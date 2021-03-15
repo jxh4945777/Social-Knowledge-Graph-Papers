@@ -63,6 +63,13 @@ Research about Social Knowledge Graph
     + [Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity](#dynamic-heterogeneous-information-networkembedding-with-meta-path-based-proximity)
     + [Relationship Prediction in Dynamic Heterogeneous Information Networks](#relationship-prediction-in-dynamic-heterogeneous-information-networks-1)
     + [Link Prediction on Dynamic Heterogeneous Information Networks](#link-prediction-on-dynamic-heterogeneous-information-networks-1)
+- [Social Network + Knowedge Graph](#social-network---knowedge-graph)
+  * [Social Network + Knowedge Graph -- 相关前沿研究(2015-至今)](#social-network---knowedge-graph-----------2015----)
+    + [Incorporating Social Context and Domain Knowledge for Entity Recognition](#incorporating-social-context-and-domain-knowledge-for-entity-recognition)
+    + [Multi-Modal Bayesian Embeddings for Learning Social Knowledge Graphs](#multi-modal-bayesian-embeddings-for-learning-social-knowledge-graphs)
+    + [Constructing Knowledge Graph for Social Networks in A Deep and Holistic Way](#constructing-knowledge-graph-for-social-networks-in-a-deep-and-holistic-way)
+    + [Personal Knowledge Graph_A Research Agenda](#personal-knowledge-graph-a-research-agenda)
+    + [Social Knowledge Graph Explorer](#social-knowledge-graph-explorer)
 - [Social Relation Reasoning](#social-relation-reasoning)
   * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
     + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
@@ -83,7 +90,6 @@ Research about Social Knowledge Graph
 - [其他参考资料](#------)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
-
 
 **【具体文献以及笔记】**
 
@@ -747,7 +753,68 @@ Research about Social Knowledge Graph
     * Ask Ubuntu
 * 是否有开源代码：无
 
+## Social Network + Knowedge Graph
+
+### Social Network + Knowedge Graph -- 相关前沿研究(2015-至今)
+
+#### Incorporating Social Context and Domain Knowledge for Entity Recognition
+* 作者： Jie Tang, et al.(THUNLP)
+* 发表时间：2015
+* 发表于：WWW 2015
+* 标签：Social Context, Entity Recognition
+* 概述：本文关注到在社交交互文本的实例识别工作中，没有使用社交节点信息以及通用知识库的信息，因此提出SOCINST方法，考虑利用社交节点信息以及通用知识库辅助社交文本中的实例识别。可以认为本文是较早考虑到在具体任务中，将社交网络中的信息与知识图谱的信息进行结合，用于实现信息互补。
+* 链接：https://dl.acm.org/doi/abs/10.1145/2736277.2741135
+* 相关数据集：
+    * Weibo
+    * I2B2
+    * ICDM' 12 Contest
+* 是否有开源代码：无
+
+#### Multi-Modal Bayesian Embeddings for Learning Social Knowledge Graphs
+* 作者： Zhilin Yang, et al.(THUNLP)
+* 发表时间：2016
+* 发表于：IJCAI 2016
+* 标签：Social Knowledge Graph, Network Embedding
+* 概述：本文可以认为是首次提出了Social Knowledge Graph的概念以及Social Knowledge Graph Learning，关注到社交网络中蕴含的大量节点信息以与通用知识库中蕴含着大量的背景信息可以互补结合，因此提出了GenVector方法，旨在链接社交网络与传统知识库，本文中对于链接的理解是将社交网络中的节点与知识库的多个概念相连接(比如社交节点中某学者与通用知识库中的几个研究方向概念连接)。
+* 链接：https://arxiv.org/abs/1508.00715
+* 相关数据集：
+    * Aminer
+    * LinkedIn Profile
+* 是否有开源代码：无
+
+#### Constructing Knowledge Graph for Social Networks in A Deep and Holistic Way
+* 作者： Qi He, et al.(LinkedIn)
+* 发表时间：2020
+* 发表于：2020 WWW Tutorial
+* 标签：Social Knowledge Graph
+* 概述：本文是LinkedIn在WWW中做的一个报告，讲述了其在将知识图谱于社交网络结合方面所做的相关工作，以及其对社交知识图谱的看法，未来面临的挑战。
+* 链接：https://dl.acm.org/doi/abs/10.1145/3366424.3383112
+* 相关数据集：
+* 是否有开源代码：无
+
+#### Personal Knowledge Graph_A Research Agenda
+* 作者： Krisztian Balog, et al. (Google)
+* 发表时间：2019
+* 发表于：ICTIR 2019
+* 标签：Personal Knowledge Graph
+* 概述：本文是谷歌所作的一篇短文，旨在从个人的视角审视知识图谱，并且提出个人知识图谱(Personal Knowedge Graph)的概念，其核心思想是以人为中心，从社交网络、通用知识图谱、领域知识图谱、用户行为信息等渠道进行数据的融合，聚合与其相关的异质信息用于构建的知识图谱，能够用于用户精准刻画，继而服务于推荐系统等应用。
+* 链接：https://dl.acm.org/doi/abs/10.1145/3341981.3344241
+* 相关数据集：
+* 是否有开源代码：无
+
+#### Social Knowledge Graph Explorer
+* 作者：Omar Alonso, et al. (Microsoft)
+* 发表时间：2019
+* 发表于：SIGIR 2019
+* 标签：Social Knowledge Graph
+* 概述：本文是微软在SIGIR的demo环节所做的一篇文章，其主要阐述了社交知识图谱的含义及其重要性，并且从工业的角度阐释了社交知识图谱的构建流程，即社交知识图谱的schema层划分及其实现，并且展示了微软的社交知识图谱demo。
+* 链接：https://dl.acm.org/doi/abs/10.1145/3331184.3331410
+* 相关数据集：
+* 是否有开源代码：无
+
+
 ## Social Relation Reasoning
+
 ### Social Relation Reasoning -- 相关前沿研究(2017-至今)
 
 #### CANE: Context-Aware Network Embedding for Relation Modeling
