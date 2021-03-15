@@ -65,7 +65,9 @@ Research about Social Knowledge Graph
     + [Link Prediction on Dynamic Heterogeneous Information Networks](#link-prediction-on-dynamic-heterogeneous-information-networks-1)
 - [Social Relation Reasoning](#social-relation-reasoning)
   * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
+    + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
     + [TransNet: Translation-Based Network Representation Learning for Social Relation Extraction](#transnet--translation-based-network-representation-learning-for-social-relation-extraction)
+    + [Social Relation Inference via Label Propagation](#social-relation-inference-via-label-propagation)
     + [Deep Reasoning with Knowledge Graph for Social Relationship Understanding](#deep-reasoning-with-knowledge-graph-for-social-relationship-understanding)
     + [Relation Learning on Social Networks with Multi-Modal Graph Edge Variational Autoencoders](#relation-learning-on-social-networks-with-multi-modal-graph-edge-variational-autoencoders)
     + [Graph Attention Networks over Edge Content-Based Channels](#graph-attention-networks-over-edge-content-based-channels)
@@ -747,6 +749,20 @@ Research about Social Knowledge Graph
 
 ## Social Relation Reasoning
 ### Social Relation Reasoning -- 相关前沿研究(2017-至今)
+
+#### CANE: Context-Aware Network Embedding for Relation Modeling
+* 作者： Cunchao Tu, et al.(THUNLP)
+* 发表时间：2017
+* 发表于：AAAI 2017
+* 标签：Social Relation Modeling, Context Information
+* 概述：本文考虑到对于社交节点的Embedding没有利用到社交节点的个人信息(如社交主页的自我介绍)，不同的节点个人背景会影响到节点的Embedding，自然而然也会影响到节点连接的Embedding，因此提出CANE的方法，旨在通过CNN将社交网络中的个人信息转化成Attention向量，继而影响社交节点的Embedding，以此实现综合个人社交信息的Embedding。
+* 链接：https://www.ijcai.org/proceedings/2017/399
+* 相关数据集：
+    * Cora
+    * HepTh
+    * Zhihu
+* 是否有开源代码：有 (https://github.com/J-zin/CANE-pytorch)
+
 #### TransNet: Translation-Based Network Representation Learning for Social Relation Extraction
 * 作者： Cunchao Tu, et al.(THUNLP)
 * 发表时间：2017
@@ -757,6 +773,17 @@ Research about Social Knowledge Graph
 * 相关数据集：
     * AMiner
 * 是否有开源代码：有 (https://github.com/thunlp/TransNet)
+
+#### Social Relation Inference via Label Propagation
+* 作者： Yingtao Tian, et al.(Google Research, UCLA)
+* 发表时间：2019
+* 发表于：ECIR 2019
+* 标签：Social Relation Extraction, Auto Encoder, Traslation Learning
+* 概述：本文是对于TransNet工作的改进，同样是认为社交关系复杂难以用单一的label表示，本文认为TransNet等表示学习方法时间成本过高，提出一种简单的基于标签传播的算法，在具有少量已标注社交关系的条件下，对于社交节点之间的关系进行补全，并且在保证了准确率的情况下提升了时间效率(5min v.s 24h+)。
+* 链接：https://link.springer.com/chapter/10.1007/978-3-030-15712-8_48
+* 相关数据集：
+    * AMiner
+* 是否有开源代码：无
 
 #### Deep Reasoning with Knowledge Graph for Social Relationship Understanding
 * 作者： ZhouxiaWang, et al. (中山大学)
