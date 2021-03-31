@@ -1,7 +1,7 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
-
-动态图专题： https://github.com/Cantoria/dynamic-graph-papers/
+**key words**: 社交网络 (Social Network), 知识图谱(Knowledge Graph), 社会计算(Social Computing)
+**动态图专题**： https://github.com/Cantoria/dynamic-graph-papers/
 
 **【目录】**
 
@@ -63,6 +63,7 @@ Research about Social Knowledge Graph
     + [Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity](#dynamic-heterogeneous-information-networkembedding-with-meta-path-based-proximity)
     + [Relationship Prediction in Dynamic Heterogeneous Information Networks](#relationship-prediction-in-dynamic-heterogeneous-information-networks-1)
     + [Link Prediction on Dynamic Heterogeneous Information Networks](#link-prediction-on-dynamic-heterogeneous-information-networks-1)
+    + [Heterogeneous Dynamic Graph Attention Network](#heterogeneous-dynamic-graph-attention-network)
 - [Social Network + Knowedge Graph](#social-network---knowedge-graph)
   * [Social Network + Knowedge Graph -- 相关前沿研究(2015-至今)](#social-network---knowedge-graph-----------2015----)
     + [Incorporating Social Context and Domain Knowledge for Entity Recognition](#incorporating-social-context-and-domain-knowledge-for-entity-recognition)
@@ -90,6 +91,7 @@ Research about Social Knowledge Graph
 - [其他参考资料](#------)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
+
 
 **【具体文献以及笔记】**
 
@@ -751,6 +753,18 @@ Research about Social Knowledge Graph
     * Reddit
     * Stack Overflow
     * Ask Ubuntu
+* 是否有开源代码：无
+
+#### Heterogeneous Dynamic Graph Attention Network
+* 作者： Qiuyan Li, et al.(BUPT)
+* 发表时间：2020
+* 发表于：ICKG 2020
+* 标签：Heterogeneous Graph, Dynamic Graph, Graph Attention Network, CTDG
+* 概述：本文关注到现实世界图的动态性和异质性，并在HAN的分层注意力机制基础上(Structural-level Attention, Semantic--level Attention)， 提出 Time-level Attention，其本质上通过Hawkes过程建模节点之间关系出现的概率，最终本文通过列两个真实数据集上的实验验证了模型的有效性，但是其模型本质创新性较少，且数实验有限(利用额外的时间信息，但并未与建模时间的方法相比较)。
+* 链接：https://link.springer.com/chapter/10.1007%2F978-3-030-34980-6_36
+* 相关数据集：
+    * ACM
+    * DBLP
 * 是否有开源代码：无
 
 ## Social Network + Knowedge Graph
