@@ -1,6 +1,8 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
+
 **key words**: 社交网络 (Social Network), 知识图谱(Knowledge Graph), 社会计算(Social Computing)
+
 **动态图专题**： https://github.com/Cantoria/dynamic-graph-papers/
 
 **【目录】**
