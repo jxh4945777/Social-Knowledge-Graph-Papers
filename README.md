@@ -1,8 +1,6 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
-
 **key words**: 社交网络 (Social Network), 知识图谱(Knowledge Graph), 社会计算(Social Computing)
-
 **动态图专题**： https://github.com/Cantoria/dynamic-graph-papers/
 
 **【目录】**
@@ -73,6 +71,9 @@ Research about Social Knowledge Graph
     + [Constructing Knowledge Graph for Social Networks in A Deep and Holistic Way](#constructing-knowledge-graph-for-social-networks-in-a-deep-and-holistic-way)
     + [Personal Knowledge Graph_A Research Agenda](#personal-knowledge-graph-a-research-agenda)
     + [Social Knowledge Graph Explorer](#social-knowledge-graph-explorer)
+- [Content Feature of Social Knowledge Graph](#content-feature-of-social-knowledge-graph)
+  * [Content Feature of Social Knowledge Graph -- 相关前沿研究(2017-至今)](#content-feature-of-social-knowledge-graph-----------2017----)
+    + [Infusing Multi-Source Knowledge with Heterogeneous Graph Neural Network for Emotional Conversation Generation](#infusing-multi-source-knowledge-with-heterogeneous-graph-neural-network-for-emotional-conversation-generation)
 - [Social Relation Reasoning](#social-relation-reasoning)
   * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
     + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
@@ -84,6 +85,7 @@ Research about Social Knowledge Graph
     + [TransConv: Relationship Embedding in Social Networks](#transconv--relationship-embedding-in-social-networks)
     + [MERL: Multi-View Edge Representation Learning in Social Networks](#merl--multi-view-edge-representation-learning-in-social-networks)
     + [Graph Convolutional Networks on User Mobility Heterogeneous Graphs for Social Relationship Inference](#graph-convolutional-networks-on-user-mobility-heterogeneous-graphs-for-social-relationship-inference)
+    + [Graph Structural-topic Neural Network](#graph-structural-topic-neural-network)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
@@ -328,6 +330,7 @@ Research about Social Knowledge Graph
     * AMiner
     * Amazon
 * 是否有开源代码：有( https://github.com/rootlu/RHINE )
+
 
 ## Dynamic Graph Representation
 
@@ -828,6 +831,21 @@ Research about Social Knowledge Graph
 * 相关数据集：
 * 是否有开源代码：无
 
+## Content Feature of Social Knowledge Graph
+
+### Content Feature of Social Knowledge Graph -- 相关前沿研究(2017-至今)
+
+#### Infusing Multi-Source Knowledge with Heterogeneous Graph Neural Network for Emotional Conversation Generation
+* 作者：Yunlong Liang.  (Wechat)
+* 发表时间：2021
+* 发表于：AAAI 2021
+* 标签：Heterogeneous Graph, Conversation Generation
+* 概述：本文称首次将异质图神经网络用于对话生成任务之中，其通过将多轮对话中的情感信息，人物信息，内容信息，表情信息(这里包含一定的多模态的数据)建模成异质图，并且通过异质图神经网络进行Encoder生成对话的向量式表示，并且设计了基于Emotion的Decoder，用于生成后续的对话内容。本文在三个公开的数据集中进行实验验证了模型的有效性。
+* 链接：https://arxiv.org/pdf/2012.04882.pdf
+* 相关数据集：
+    * MELD
+    * DailyDialog
+* 是否有开源代码：有( https://github.com/XL2248/HGNN )
 
 ## Social Relation Reasoning
 
@@ -940,6 +958,21 @@ Research about Social Knowledge Graph
     * Brightkite
     * Foursquare
 * 是否有开源代码：有( https://github.com/libertyeagle/gcn mobility relationship )
+
+#### Graph Structural-topic Neural Network
+* 作者：Qingqing Long.  (北京大学)
+* 发表时间：2020
+* 发表于：KDD 20202
+* 标签：Structural-topic, Latent Dirichlet Allocation, Anonymous Random Walk, Graph Neural Network
+* 概述：本文关注于不同类型的图结构蕴含着不同的社交关系信息，例如星型结构-Follow关系，层级结构-上下级公司关系, 全连接结构-家庭关系，因此本文旨在挖掘图结构蕴含的社交关系主题信息，首先通过Anonymous random walks采样中心节点周围的子图结构，并且通过Graph Anchor机制选择具有代表性的序列，然后类比于NLP的序列，利用LDA分析子图结构蕴含的主题信息，最后服务于节点的表示学习，本文在四个主流社交数据集上验证了模型的有效性
+* 链接：https://arxiv.org/pdf/2006.14278.pdf
+* 相关数据集：
+    * Cora
+    * AMiner
+    * Pubmed
+    * PPI
+* 是否有开源代码：有( https://github.com/YimiAChack/GraphSTONE/ )
+
 
 ## Knowledge Graph (\#TODO)
 ### Knowledge Graph - 最新综述(\#TODO)
