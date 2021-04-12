@@ -1,8 +1,6 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
-
 **key words**: 社交网络 (Social Network), 知识图谱(Knowledge Graph), 社会计算(Social Computing)
-
 **动态图专题**： https://github.com/Cantoria/dynamic-graph-papers/
 
 **【目录】**
@@ -28,6 +26,7 @@ Research about Social Knowledge Graph
     + [Learning Intents behind Interactions with Knowledge Graph for Recommendation](#learning-intents-behind-interactions-with-knowledge-graph-for-recommendation)
     + [MultiSage: Empowering GCN with Contextualized Multi-Embeddings on Web-Scale Multipartite Networks](#multisage--empowering-gcn-with-contextualized-multi-embeddings-on-web-scale-multipartite-networks)
     + [RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding](#rhine--relation-structure-aware-heterogeneous-information-network-embedding)
+    + [TIMME: Twitter Ideology-detection via Multi-task Multi-relational Embedding](#timme--twitter-ideology-detection-via-multi-task-multi-relational-embedding)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
@@ -62,7 +61,7 @@ Research about Social Knowledge Graph
     + [基于动态异构信息网络的时序关系预测](#-----------------)
     + [DHNE: Network Representation Learning Method for Dynamic Heterogeneous Networks](#dhne--network-representation-learning-method-for-dynamic-heterogeneous-networks)
     + [Modeling Dynamic Heterogeneous Network for Link Prediction using Hierarchical Attention with Temporal RNN](#modeling-dynamic-heterogeneous-network-for-link-prediction-using-hierarchical-attention-with-temporal-rnn-1)
-    + [Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity](#dynamic-heterogeneous-information-networkembedding-with-meta-path-based-proximity)
+    + [Dynamic Heterogeneous Information Network Embedding with Meta-path based Proximity](#dynamic-heterogeneous-information-network-embedding-with-meta-path-based-proximity)
     + [Relationship Prediction in Dynamic Heterogeneous Information Networks](#relationship-prediction-in-dynamic-heterogeneous-information-networks-1)
     + [Link Prediction on Dynamic Heterogeneous Information Networks](#link-prediction-on-dynamic-heterogeneous-information-networks-1)
     + [Heterogeneous Dynamic Graph Attention Network](#heterogeneous-dynamic-graph-attention-network)
@@ -332,6 +331,17 @@ Research about Social Knowledge Graph
     * AMiner
     * Amazon
 * 是否有开源代码：有( https://github.com/rootlu/RHINE )
+
+#### TIMME: Twitter Ideology-detection via Multi-task Multi-relational Embedding
+* 作者： Zhiping Xiao, et al. (UCLA)
+* 发表时间：2020
+* 发表于：KDD 2020
+* 标签：multi relation, ideology detection
+* 概述：本文旨在通过社交网络的信息分析用户的政治倾向，考虑到社交网络中有不同类型的边的链接(like, tweet, retweet, mention, follow)，其代表着不同的语义信息，以及用户之间相同或者不相同的政治倾向。且现实社交网络中存在“沉默的大多数”现象，即大部分人并不会明确表达自己的政治倾向，因此并非所有用户都有标注，且存在信息缺失。因此本文首先提出了*Political-Centered Social Network*，并且基于twitter数据构建了新的用于分析倾向性的数据集。尔后针对性地提出了模型TIMME，其中包括Multi-Relation Encoder(类似于R-GCN)，以及multi-task decoder，用于包含大量网络用户的倾向性分析。本文通过充分的实验和分析验证了模型的有效性，且分析了社交网络中政治倾向性的传播现象。
+* 链接：https://arxiv.org/abs/2006.01321v3
+* 相关数据集：
+    * Twitter
+* 是否有开源代码：有( https://github.com/PatriciaXiao/TIMME )
 
 
 ## Dynamic Graph Representation
@@ -724,7 +734,7 @@ Research about Social Knowledge Graph
     * Ecomm
 * 是否有开源代码：有(https://github.com/skx300/DyHATR)
 
-#### Dynamic Heterogeneous Information NetworkEmbedding with Meta-path based Proximity
+#### Dynamic Heterogeneous Information Network Embedding with Meta-path based Proximity
 * 作者： Xiao Wang, et al.
 * 发表时间：2020
 * 发表于：TKDE
