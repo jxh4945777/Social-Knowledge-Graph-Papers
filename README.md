@@ -1,7 +1,7 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
 
-**key words**: 社交网络 (Social Network), 知识图谱(Knowledge Graph), 社会计算(Social Computing)
+**key words**: 社交网络 (Social Network), 知识图谱 (Knowledge Graph), 社会计算 (Social Computing)
 
 **动态图专题**： https://github.com/Cantoria/dynamic-graph-papers/
 
@@ -89,6 +89,7 @@ Research about Social Knowledge Graph
     + [MERL: Multi-View Edge Representation Learning in Social Networks](#merl--multi-view-edge-representation-learning-in-social-networks)
     + [Graph Convolutional Networks on User Mobility Heterogeneous Graphs for Social Relationship Inference](#graph-convolutional-networks-on-user-mobility-heterogeneous-graphs-for-social-relationship-inference)
     + [Graph Structural-topic Neural Network](#graph-structural-topic-neural-network)
+    + [Self-Supervised Multi-Channel Hypergraph Convolutional Network for Social Recommendation](#self-supervised-multi-channel-hypergraph-convolutional-network-for-social-recommendation)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
@@ -976,7 +977,7 @@ Research about Social Knowledge Graph
 #### Graph Structural-topic Neural Network
 * 作者：Qingqing Long.  (北京大学)
 * 发表时间：2020
-* 发表于：KDD 20202
+* 发表于：KDD 2020
 * 标签：Structural-topic, Latent Dirichlet Allocation, Anonymous Random Walk, Graph Neural Network
 * 概述：本文关注于不同类型的图结构蕴含着不同的社交关系信息，例如星型结构-Follow关系，层级结构-上下级公司关系, 全连接结构-家庭关系，因此本文旨在挖掘图结构蕴含的社交关系主题信息，首先通过Anonymous random walks采样中心节点周围的子图结构，并且通过Graph Anchor机制选择具有代表性的序列，然后类比于NLP的序列，利用LDA分析子图结构蕴含的主题信息，最后服务于节点的表示学习，本文在四个主流社交数据集上验证了模型的有效性
 * 链接：https://arxiv.org/pdf/2006.14278.pdf
@@ -987,6 +988,18 @@ Research about Social Knowledge Graph
     * PPI
 * 是否有开源代码：有( https://github.com/YimiAChack/GraphSTONE/ )
 
+#### Self-Supervised Multi-Channel Hypergraph Convolutional Network for Social Recommendation
+* 作者：Junliang Yu.  (University of Queensland)
+* 发表时间：2021
+* 发表于：WWW 2021
+* 标签：Hypergraph, Multi Channel, Self-Supervised, Graph Neural Network
+* 概述：本文关注于利用超图结合motif建模社交网络(User-Item)中高阶关系，首先定义了三类(Social motifs/ Joint motifs/ Purchase Motif)共九种motif关系，并且据此设计融入超图信息的多通道图神经网络MHCN，然后为使得不同的通道蕴含其独特的信息，本文设计自监督的方式使得训练过程中不同channel互信息最大化，本文在三个主流社交数据集上验证了模型的有效性
+* 链接：https://arxiv.org/abs/2101.06448v3
+* 相关数据集：
+    * LastFM
+    * Douban
+    * Yelp
+* 是否有开源代码：有( https://github.com/Coder-Yu/RecQ )
 
 ## Knowledge Graph (\#TODO)
 ### Knowledge Graph - 最新综述(\#TODO)
