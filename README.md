@@ -10,6 +10,7 @@ Research about Social Knowledge Graph
 - [Static Graph Representation](#static-graph-representation)
     + [Semi-Supervised Classification with Graph Convolutional Networks](#semi-supervised-classification-with-graph-convolutional-networks)
     + [Inductive representation learning on large graphs](#inductive-representation-learning-on-large-graphs)
+    + [Anonymous Walk Embeddings](#anonymous-walk-embeddings)
 - [Heterogeneous Graph/Heterogeneous Information Network Representation](#heterogeneous-graph-heterogeneous-information-network-representation)
   * [Heterogeneous Graph/Heterogeneous Information Network Representation - 最新综述](#heterogeneous-graph-heterogeneous-information-network-representation-------)
     + [Heterogeneous Network Representation Learning: A Unified Framework with Survey and Benchmark](#heterogeneous-network-representation-learning--a-unified-framework-with-survey-and-benchmark)
@@ -29,11 +30,13 @@ Research about Social Knowledge Graph
     + [MultiSage: Empowering GCN with Contextualized Multi-Embeddings on Web-Scale Multipartite Networks](#multisage--empowering-gcn-with-contextualized-multi-embeddings-on-web-scale-multipartite-networks)
     + [RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding](#rhine--relation-structure-aware-heterogeneous-information-network-embedding)
     + [TIMME: Twitter Ideology-detection via Multi-task Multi-relational Embedding](#timme--twitter-ideology-detection-via-multi-task-multi-relational-embedding)
+    + [Knowledge Embedding Based Graph Convolutional Network](#knowledge-embedding-based-graph-convolutional-network)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
     + [Foundations and modelling of dynamic networks using Dynamic Graph Neural Networks: A survey](#foundations-and-modelling-of-dynamic-networks-using-dynamic-graph-neural-networks--a-survey)
     + [Temporal Link Prediction: A Survey](#temporal-link-prediction--a-survey)
+    + [Motifs in Temporal Networks](#motifs-in-temporal-networks)
   * [Dynamic Graph Representation -- 相关前沿研究(2019 - 至今)](#dynamic-graph-representation-----------2019------)
     + [DYREP: LEARNING REPRESENTATIONS OVER DYNAMIC GRAPHS](#dyrep--learning-representations-over-dynamic-graphs)
     + [Context-Aware Temporal Knowledge Graph Embedding](#context-aware-temporal-knowledge-graph-embedding)
@@ -133,6 +136,25 @@ Research about Social Knowledge Graph
     * Reddit
     * PPI
 * 是否有开源代码：有
+
+#### Anonymous Walk Embeddings
+* 作者：Sergey Ivanov
+* 发表时间：2018
+* 发表于：ICML 2018
+* 标签：Anonymous walk, Graph embedding
+* 概述：有别于特征工程或纯粹数据驱动的图表示学习方法，作者提出了一种匿名路径嵌入（AWE）的方法，结合了特征工程与数据驱动的方式，用于整图的表示学习工作。其分为Feature-Based model与data-driven model两部分。Feature-Based model将带权图转化为马尔可夫图，通过预定义好的匿名路径（固定数目、固定长度）及匿名路径在该马尔可夫图上的采样归一化概率，得到带权图的向量表示d。在data-driven model中，作者定义了anonymous walks邻居的概念，通过skip-gram的形式结合图向量表示d对anonymous walk的表示以及进行训练，最终可以得到每个匿名路径的表示与图向量表示。作者在图分类任务上进行了实验，与基于特征工程的方法（核方法等）与数据驱动的方法（神经网络方法等）进行了对比，在图分类准确率、训练效率等方面进行了比较。
+* 链接：https://arxiv.org/pdf/1805.11921.pdf
+* 相关数据集：
+    * COLLAB
+    * IMDB-B
+    * IMDB-M
+    * RE-B
+    * RE-M5K
+    * RE-M12K
+    * Enzymes
+    * DD
+    * Mutag
+* 是否有开源代码：有（原始代码为https://github.com/nd7141/AWE ）
 
 
 ## Heterogeneous Graph/Heterogeneous Information Network Representation
@@ -346,6 +368,19 @@ Research about Social Knowledge Graph
     * Twitter
 * 是否有开源代码：有( https://github.com/PatriciaXiao/TIMME )
 
+#### Knowledge Embedding Based Graph Convolutional Network
+* 作者： Donghan Yu, et al. (CMU, Google)
+* 发表时间：2021
+* 发表于：WWW 2021
+* 标签：Knowledge Graph, Graph Neural Network, Heterogeneous Graph
+* 概述：本文旨在将图神经网络用于知识图谱这种节点和边类型十分丰富的异质图中，首先对比了近期的W-GCN, R-GCN, Comp-GCN等相关工作，并且总结了其优劣提出了新的模型KE-GCN，在该框架下W-GCN等模型都是KE-GCN的特例情况。具体来讲，KE-GCN在考虑边的建模时，利用了与该边相关的实体的信息进行聚合，更新边的表示。本文通过知识库对齐和实体识别两个任务验证了模型的有效性。
+* 链接：http://arxiv.org/abs/2006.07331v2
+* 相关数据集：
+    * DBP(ZH-EN, JA-EN, FR-EN)
+    * AM
+    * WN
+    * FB15K
+* 是否有开源代码：有( https://github.com/PlusRoss/KE-GCN )
 
 ## Dynamic Graph Representation
 
@@ -374,6 +409,16 @@ Research about Social Knowledge Graph
 * 关键词：时态链接预测，综述
 * 概述：从离散动态图（DTDG）的角度出发，本文针对时态链接预测任务给出了相关定义，并从实现方法的角度出发，构建了时态链接预测的分类体系，分别从矩阵分解/概率模型/谱聚类/时间序列模型/深度学习等不同方法实现的模型进行了比较与论述。文章还列举出了时态链接预测任务的相关数据集（论文互引网络、通讯网络、社交网络、人类交往网络数据等）。最后，文章对时态链接预测任务的难点进行了展望。
 * 链接：https://link.springer.com/article/10.1007%2Fs00354-019-00065-z
+
+
+#### Motifs in Temporal Networks
+* 作者： Ashwin Paranjape, et al. 
+* 发表时间：2017
+* 发表于：WSDM, 2017
+* 关键词：时态网络，motif
+* 概述：该文将传统图分析中的motif概念引入时态网络中，认为时态网络中的motif是网络中的最基本构成单位，定义了Temporal network motifs与时间间隔关联的δ-temporal motifs的概念；并利用时态网络上的motif分析时态网络上的演化交互规律。此外，作者设计了一种快速计算时态网络中不同类型motif数目的算法，能够快速分析某个时态网络的演化特性。
+* 链接：https://dl.acm.org/doi/abs/10.1145/3018661.3018731
+
 
 ### Dynamic Graph Representation -- 相关前沿研究(2019 - 至今)
 
