@@ -362,7 +362,7 @@ Research about Social Knowledge Graph
 * 发表时间：2020
 * 发表于：KDD 2020
 * 标签：multi relation, ideology detection
-* 概述：本文旨在通过社交网络的信息分析用户的政治倾向，考虑到社交网络中有不同类型的边的链接(like, tweet, retweet, mention, follow)，其代表着不同的语义信息，以及用户之间相同或者不相同的政治倾向。且现实社交网络中存在“沉默的大多数”现象，即大部分人并不会明确表达自己的政治倾向，因此并非所有用户都有标注，且存在信息缺失。因此本文首先提出了*Political-Centered Social Network*，并且基于twitter数据构建了新的用于分析倾向性的数据集。尔后针对性地提出了模型TIMME，其中包括Multi-Relation Encoder(类似于R-GCN)，以及multi-task decoder，用于包含大量网络用户的倾向性分析。本文通过充分的实验和分析验证了模型的有效性，且分析了社交网络中政治倾向性的传播现象。
+* 概述：本文旨在通过社交网络的信息分析用户的政治倾向，考虑到社交网络中有不同类型的边的链接(like, tweet, retweet, mention, follow)，其代表着不同的语义信息，以及用户之间相同或者不相同的政治倾向。且现实社交网络中存在“沉默的大多数”现象，即大部分人并不会明确表达自己的政治倾向，因此并非所有用户都有标注，且存在信息缺失。因此本文首先提出了*Political-Centered Social Network*，并且基于twitter数据构建了新的用于分析倾向性的数据集。尔后针对性地提出了模型TIMME，其中包括Multi-Relation Encoder(类似于R-GCN)，以及multi-task decoder，用于包含大量网络用户的倾向性分析。本文通过充分的实验和分析验证了模型的有效性，且分析了社交网络中政治倾向性的传播现象。且本篇研究工作提供了一个完整的数据集，可以进行相关的研究与探索。
 * 链接：https://arxiv.org/abs/2006.01321v3
 * 相关数据集：
     * Twitter
