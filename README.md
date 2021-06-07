@@ -80,6 +80,7 @@ Research about Social Knowledge Graph
 - [Content Feature of Social Knowledge Graph](#content-feature-of-social-knowledge-graph)
   * [Content Feature of Social Knowledge Graph -- 相关前沿研究(2017-至今)](#content-feature-of-social-knowledge-graph-----------2017----)
     + [Infusing Multi-Source Knowledge with Heterogeneous Graph Neural Network for Emotional Conversation Generation](#infusing-multi-source-knowledge-with-heterogeneous-graph-neural-network-for-emotional-conversation-generation)
+    + [Knowledge-based Review Generation by Coherence Enhanced Text Planning](#knowledge-based-review-generation-by-coherence-enhanced-text-planning)
 - [Social Relation Reasoning](#social-relation-reasoning)
   * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
     + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
@@ -906,6 +907,19 @@ Research about Social Knowledge Graph
     * MELD
     * DailyDialog
 * 是否有开源代码：有( https://github.com/XL2248/HGNN )
+
+#### Knowledge-based Review Generation by Coherence Enhanced Text Planning
+* 作者：Junyi Li. Wayne Xin Zhao (人大高瓴)
+* 发表时间：2021
+* 发表于：SIGIR 2021
+* 标签：Heterogeneous Knowledge Graph, Text Generation
+* 概述：本文关注于利用知识图谱改善评论文本生成的质量。具体来讲，本文旨在使用KG的子图及其之间的关系去保证生成文本的全局以及局部一致性；在方法部分，本文首先提出了异质知识图谱，即包括User-Item-Entity-Word四种类型节点的异质图，并且本文提出了CETP用于评论生成，其包括document plan以及sentence plan，用于保证文本生成时的异质性。本文通过大量实验证明了模型的有效性。
+* 链接：https://arxiv.org/pdf/2105.03815.pdf
+* 相关数据集：(基于以下三个数据集构建)
+    * AMAZON Electronic
+    * BOOK
+    * IMDB Movie
+* 是否有开源代码：有( https://github.com/turboLJY/Coherence-Review-Generation )
 
 ## Social Relation Reasoning
 
