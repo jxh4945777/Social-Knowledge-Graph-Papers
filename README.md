@@ -81,6 +81,7 @@ Research about Social Knowledge Graph
   * [Content Feature of Social Knowledge Graph -- 相关前沿研究(2017-至今)](#content-feature-of-social-knowledge-graph-----------2017----)
     + [Infusing Multi-Source Knowledge with Heterogeneous Graph Neural Network for Emotional Conversation Generation](#infusing-multi-source-knowledge-with-heterogeneous-graph-neural-network-for-emotional-conversation-generation)
     + [Knowledge-based Review Generation by Coherence Enhanced Text Planning](#knowledge-based-review-generation-by-coherence-enhanced-text-planning)
+    + [Improving Conversational Recommender Systems via Knowledge Graph based Semantic Fusion](#improving-conversational-recommender-systems-via-knowledge-graph-based-semantic-fusion)
 - [Social Relation Reasoning](#social-relation-reasoning)
   * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
     + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
@@ -909,7 +910,7 @@ Research about Social Knowledge Graph
 * 是否有开源代码：有( https://github.com/XL2248/HGNN )
 
 #### Knowledge-based Review Generation by Coherence Enhanced Text Planning
-* 作者：Junyi Li. Wayne Xin Zhao (人大高瓴)
+* 作者：Junyi Li,  Wayne Xin Zhao (人大高瓴)
 * 发表时间：2021
 * 发表于：SIGIR 2021
 * 标签：Heterogeneous Knowledge Graph, Text Generation
@@ -920,6 +921,17 @@ Research about Social Knowledge Graph
     * BOOK
     * IMDB Movie
 * 是否有开源代码：有( https://github.com/turboLJY/Coherence-Review-Generation )
+
+#### Improving Conversational Recommender Systems via Knowledge Graph based Semantic Fusion
+* 作者：Kun Zhou, Wayne Xin Zhao (PKU, 人大高瓴)
+* 发表时间：2020
+* 发表于：KDD 2020
+* 标签：Conversational Recommender Systems, Knowledge Graph
+* 概述：本文是一篇关于对话式推荐系统的研究，重点考虑多轮对话前后语义一致性，以及对话背后的背景知识以及自然语言和用户表述的语义鸿沟。本文将概念知识图谱(ConceptNet)和通用知识图谱(DBpedia)引入到对话推荐系统中(CRS)，首先利用图神经网络(R-GCN，以及GCN)学习知识节点的表示，并且通过互信息来使得两个知识图谱的对应节点表示相似，最终在此基础上设计Encoder-Decoder，实现推荐。本文通过全面的实验验证了模型的有效性。
+* 链接：https://arxiv.org/pdf/2007.04032.pdf
+* 相关数据集：
+    * REcommendations through DIALog (REDIAL)
+* 是否有开源代码：有( https://github.com/lancelot39/kgsf )
 
 ## Social Relation Reasoning
 
