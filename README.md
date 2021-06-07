@@ -82,6 +82,7 @@ Research about Social Knowledge Graph
     + [Infusing Multi-Source Knowledge with Heterogeneous Graph Neural Network for Emotional Conversation Generation](#infusing-multi-source-knowledge-with-heterogeneous-graph-neural-network-for-emotional-conversation-generation)
     + [Knowledge-based Review Generation by Coherence Enhanced Text Planning](#knowledge-based-review-generation-by-coherence-enhanced-text-planning)
     + [Improving Conversational Recommender Systems via Knowledge Graph based Semantic Fusion](#improving-conversational-recommender-systems-via-knowledge-graph-based-semantic-fusion)
+    + [Joint Representation Learning of Legislator and Legislation for Roll Call Prediction Fusion](#joint-representation-learning-of-legislator-and-legislation-for-roll-call-prediction-fusion)
 - [Social Relation Reasoning](#social-relation-reasoning)
   * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
     + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
@@ -104,7 +105,6 @@ Research about Social Knowledge Graph
 - [其他参考资料](#------)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
-
 
 **【具体文献以及笔记】**
 
@@ -932,6 +932,17 @@ Research about Social Knowledge Graph
 * 相关数据集：
     * REcommendations through DIALog (REDIAL)
 * 是否有开源代码：有( https://github.com/lancelot39/kgsf )
+
+#### Joint Representation Learning of Legislator and Legislation for Roll Call Prediction Fusion
+* 作者：Yuqiao Yang (复旦大学)
+* 发表时间：2020
+* 发表于：IJCAI 2020
+* 标签：Roll Call Prediction, Graph Neural Network
+* 概述：本文聚焦于建模立法者和相关的法案投票。考虑到以往的模型仅仅利用立法者或者法案本身的特征信息以及简单利用法案的文本信息，而缺乏对于立法者之间的关系，以及深层次文本信息的利用。因此，本文利用GCN学习立法者的表示，利用LSTM根据法案内容学习法案的表示，并且利用Triplet Loss来对齐法案和立法者的向量空间。本文提出了相关研究的数据集，并且进行了充分的实验验证了模型的有效性。
+* 链接：https://www.ijcai.org/Proceedings/2020/0198.pdf
+* 相关数据集：
+    * REcommendations through DIALog (REDIAL)
+* 是否有开源代码：有( https://github.com/lxqjdai/Joint-Representation-Learning-of-Legislator-and-Legislation-for-Roll-Call-Prediction )
 
 ## Social Relation Reasoning
 
