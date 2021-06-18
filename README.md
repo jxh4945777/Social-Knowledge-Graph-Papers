@@ -8,6 +8,7 @@ Research about Social Knowledge Graph
 **【目录】**
 
 - [Static Graph Representation](#static-graph-representation)
+  * [Static Graph Representation - 经典工作](#static-graph-representation-------)
     + [Semi-Supervised Classification with Graph Convolutional Networks](#semi-supervised-classification-with-graph-convolutional-networks)
     + [Inductive representation learning on large graphs](#inductive-representation-learning-on-large-graphs)
     + [Anonymous Walk Embeddings](#anonymous-walk-embeddings)
@@ -121,6 +122,8 @@ Research about Social Knowledge Graph
 
 ## Static Graph Representation
 挑选了引用数较高、知名度较大的一些静态图表示学习的工作。
+
+### Static Graph Representation - 经典工作
 
 #### Semi-Supervised Classification with Graph Convolutional Networks
 * 作者：Thomas N. Kipf, et al. (University of Amsterdam)
