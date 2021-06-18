@@ -77,6 +77,16 @@ Research about Social Knowledge Graph
     + [Constructing Knowledge Graph for Social Networks in A Deep and Holistic Way](#constructing-knowledge-graph-for-social-networks-in-a-deep-and-holistic-way)
     + [Personal Knowledge Graph_A Research Agenda](#personal-knowledge-graph-a-research-agenda)
     + [Social Knowledge Graph Explorer](#social-knowledge-graph-explorer)
+    + [Representation Learning in Heterogeneous Professional Social Networks with Ambiguous Social Connections](#representation-learning-in-heterogeneous-professional-social-networks-with-ambiguous-social-connections)
+- [Integration over Knowledge Graph and Social Network](#integration-over-knowledge-graph-and-social-network)
+  * [Integration of Knowledge Graph and Social Network -- 综述](#integration-of-knowledge-graph-and-social-network------)
+    + [A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs](#a-benchmarking-study-of-embedding-based-entity-alignment-for-knowledge-graphs)
+    + [An Experimental Study of State-of-the-Art Entity Alignment Approaches](#an-experimental-study-of-state-of-the-art-entity-alignment-approaches)
+  * [Integration of Knowledge Graph and Social Network -- 相关前沿研究(2015-至今)](#integration-of-knowledge-graph-and-social-network-----------2015----)
+    + [Bootstrapping Entity Alignment with Knowledge Graph Embedding](#bootstrapping-entity-alignment-with-knowledge-graph-embedding)
+    + [Multi-view Knowledge Graph Embedding for Entity Alignment](#multi-view-knowledge-graph-embedding-for-entity-alignment)
+    + [Jointly Learning Entity and Relation Representations for Entity Alignment](#jointly-learning-entity-and-relation-representations-for-entity-alignment)
+    + [A BERT-based Interaction Model For Knowledge Graph Alignment](#a-bert-based-interaction-model-for-knowledge-graph-alignment)
 - [Content Feature of Social Knowledge Graph](#content-feature-of-social-knowledge-graph)
   * [Content Feature of Social Knowledge Graph -- 相关前沿研究(2017-至今)](#content-feature-of-social-knowledge-graph-----------2017----)
     + [Infusing Multi-Source Knowledge with Heterogeneous Graph Neural Network for Emotional Conversation Generation](#infusing-multi-source-knowledge-with-heterogeneous-graph-neural-network-for-emotional-conversation-generation)
@@ -105,6 +115,7 @@ Research about Social Knowledge Graph
 - [其他参考资料](#------)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
+
 
 **【具体文献以及笔记】**
 
@@ -892,6 +903,104 @@ Research about Social Knowledge Graph
 * 链接：https://dl.acm.org/doi/abs/10.1145/3331184.3331410
 * 相关数据集：
 * 是否有开源代码：无
+
+#### Representation Learning in Heterogeneous Professional Social Networks with Ambiguous Social Connections
+* 作者：Baoxu Shi, et al. (LinkedIn)
+* 发表时间：2019
+* 发表于：ICBD 2019
+* 标签：Heterogeneous Professional Social Network, Random Walk
+* 概述：本文是LinkedIn立足于自身业务需求而提出的一篇偏向于具体应用的文章。本文首先考虑到丰富的异质信息能够辅助社交网络信息挖掘，因此对于传统只包含person节点的社交网络进行了扩充，加入了与人相关的entity，提出了heterogeneous professional social network。在该异质社交网络上，本文提出了STAR2VEC，即围绕特定person节点扩展相应的entity (这里感觉与google的personal knowledge graph有了联系)，并且在此基础上提出基于random walk的方法学习节点的表示，服务于诸如节点分类，节点聚类，链接预测的任务。最终为诸如Next Career Move, Alternative Career Suggestion, General Similarity Search等业务应用提供支持。
+* 链接：https://arxiv.org/pdf/1910.10763.pdf
+* 相关数据集：
+    * Facebook
+    * LinkedIn-60k
+    * LinkedIn-44M
+* 是否有开源代码：无
+* 
+## Integration over Knowledge Graph and Social Network
+
+### Integration of Knowledge Graph and Social Network -- 综述
+
+#### A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs
+* 作者： Zequn Sun, et al. (NJU, UCLA)
+* 发表时间：2020
+* 发表于：VLDB 2020
+* 标签：Entity Alignment, Knowledge Graph, Survey
+* 概述：实体对齐是跨知识图谱融合的重要手段。本文对于知识图谱的实体对齐相关技术进行了综述，并且根据其使用的技术特点进行分类，在此基础上作者构建了开源的实体对齐库OpenEA。
+* 链接：http://www.vldb.org/pvldb/vol13/p2326-sun.pdf
+* 相关数据集：
+    * DBpedia
+    * Wikidata
+    * YAGO
+* 是否有开源代码：有 (https://github.com/nju-websoft/OpenEA)
+
+#### An Experimental Study of State-of-the-Art Entity Alignment Approaches
+* 作者：Xiang Zhao, et al. (New South Wales)
+* 发表时间：2020
+* 发表于：TKDE 2020
+* 标签：Entity Alignment, Knowledge Graph, Survey
+* 概述：本文同样是一篇有关知识图谱的实体对齐的综述，其对于常见的知识图谱实体对齐方法进行了更为详细的分析，并且对于模型中常用的组件进行了功能性分析，且提出了具有unmatch实体的数据集: DBP-FR. 最后根据实验对于实体对齐时的模型选择给出了建议。
+* 链接：https://doi.org/10.1109/TKDE.2020.3018741
+* 相关数据集：
+    * DBP-FR
+    * DWY100k
+    * DBP15k
+    * SRPRS
+* 是否有开源代码：有 (https://github.com/DexterZeng/EAE)
+
+
+### Integration of Knowledge Graph and Social Network -- 相关前沿研究(2015-至今)
+
+#### Bootstrapping Entity Alignment with Knowledge Graph Embedding
+* 作者：Zequn Sun, et al. (NJU)
+* 发表时间：2018
+* 发表于：IJCAI 2018
+* 标签：Entity Alignment, Knowledge Graph
+* 概述：本文将实体对齐视作一个分类任务，在全局寻找最符合的对其节点，且设计了新的loss，使正负差异变大，除此之外，本文提出一个结合bootstrapping的方式用于半监督实体对齐。
+* 链接：https://www.ijcai.org/Proceedings/2018/0611.pdf
+* 相关数据集：
+    * DBP_ZH-EN
+    * DBP-WD
+    * DBP-YG
+* 是否有开源代码：有 (https://github.com/nju-websoft/BootEA)
+
+#### Multi-view Knowledge Graph Embedding for Entity Alignment
+* 作者：Qingheng Zhang, et al. (NJU)
+* 发表时间：2019
+* 发表于：IJCAI 2019
+* 标签：Entity Alignment, Knowledge Graph
+* 概述：本文考虑到不同类型的信息对于实体对齐任务的增益，提出了一种新的实体对齐框架，从属性、实体名、关系三个角度来学习实体的embedding，并且给出了多种结合策略。实验证明模型的实体对齐效果相较Baseline有了显著的提升。
+* 链接：https://www.ijcai.org/Proceedings/2019/754
+* 相关数据集：
+    * DBP-WD
+    * DBP-YG
+* 是否有开源代码：有 (https://github.com/nju-websoft/MultiKE)
+
+#### Jointly Learning Entity and Relation Representations for Entity Alignment
+* 作者：Yuting Wu, et al. (PKU)
+* 发表时间：2019
+* 发表于：EMNLP 2019
+* 标签：Entity Alignment, Knowledge Graph
+* 概述：本文考虑到以往的实体对齐方法没有利用好实体之间的关系来辅助实体对齐，因此本文基于图神经网络，提出一种新的实体和关系的联合学习框架用于实体对齐。
+* 链接：https://www.aclweb.org/anthology/D19-1023.pdf
+* 相关数据集：
+    * DWY100k
+    * DBP15k
+    * DBP-FB
+    * SRPRS
+* 是否有开源代码：有 (https://github.com/StephanieWyt/HGCN-JE-JR)
+
+#### A BERT-based Interaction Model For Knowledge Graph Alignment
+* 作者：Xiaobing Tang, et al. (Renmin University)
+* 发表时间：2020
+* 发表于：IJCAI 2020
+* 标签：Entity Alignment, Knowledge Graph
+* 概述：本文考虑到知识图谱的边缘信息(e.g., 名称、描述、属性)比结构信息更为游泳，因此本文提出了只利用边缘信息的知识图谱实体对齐方法BERT-INT，即基于BERT处理实体的边缘信息用于实体对齐。
+* 链接：https://www.ijcai.org/Proceedings/2020/0439.pdf
+* 相关数据集：
+    * DBP15k
+* 是否有开源代码：有 (https://github.com/kosugi11037/bert-int)
+
 
 ## Content Feature of Social Knowledge Graph
 
