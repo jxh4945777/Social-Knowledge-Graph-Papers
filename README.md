@@ -83,6 +83,7 @@ Research about Social Knowledge Graph
   * [Integration of Knowledge Graph and Social Network -- 综述](#integration-of-knowledge-graph-and-social-network------)
     + [A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs](#a-benchmarking-study-of-embedding-based-entity-alignment-for-knowledge-graphs)
     + [An Experimental Study of State-of-the-Art Entity Alignment Approaches](#an-experimental-study-of-state-of-the-art-entity-alignment-approaches)
+    + [面向网络大数据的知识融合方法综述](#----------------)
   * [Integration of Knowledge Graph and Social Network -- 相关前沿研究(2015-至今)](#integration-of-knowledge-graph-and-social-network-----------2015----)
     + [Bootstrapping Entity Alignment with Knowledge Graph Embedding](#bootstrapping-entity-alignment-with-knowledge-graph-embedding)
     + [Multi-view Knowledge Graph Embedding for Entity Alignment](#multi-view-knowledge-graph-embedding-for-entity-alignment)
@@ -110,13 +111,15 @@ Research about Social Knowledge Graph
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
+    + [Knowledge Graphs](#knowledge-graphs)
+    + [Knowledge graph embedding: A survey of approaches and applications](#knowledge-graph-embedding--a-survey-of-approaches-and-applications)
+    + [A review of relational machine learning for knowledge graphs](#a-review-of-relational-machine-learning-for-knowledge-graphs)
   * [Knowledge Graph - 相关前沿研究(\#TODO)](#knowledge-graph------------todo-)
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
-
 
 **【具体文献以及笔记】**
 
@@ -951,6 +954,16 @@ Research about Social Knowledge Graph
     * SRPRS
 * 是否有开源代码：有 (https://github.com/DexterZeng/EAE)
 
+#### 面向网络大数据的知识融合方法综述
+* 作者：Hailun Lin, et al. (中科院计算所)
+* 发表时间：2017
+* 发表于：计算机学报
+* 标签：Knowledge Integration, Survey
+* 概述：本文立足于面向网络大数据的开放知识网络，考虑到如何将网络大数据中获得的知识融入开放知识网络，对于近年来有关于知识融合的研究工作进行了系统性地梳理，并且提出了面向网络大数据的知识融合方法整体框架。
+* 链接：http://cjc.ict.ac.cn/online/onlinepaper/lhl-20171494626.pdf
+* 相关数据集：无
+* 是否有开源代码：无
+
 
 ### Integration of Knowledge Graph and Social Network -- 相关前沿研究(2015-至今)
 
@@ -1197,13 +1210,41 @@ Research about Social Knowledge Graph
 
 ## Knowledge Graph (\#TODO)
 ### Knowledge Graph - 最新综述(\#TODO)
+
 #### A Survey on Knowledge Graphs: Representation, Acquisition and Applications
 * 作者：Shaoxiong Ji, Shirui Pan, Erik Cambria, Senior Member, IEEE, Pekka Marttinen, Philip S. Yu, Fellow IEEE
-* 发表时间：2020
-* 发表于：Arxiv
+* 发表时间：2021
+* 发表于：TNNLS
 * 标签：Knowledge Graph, Representation Learning
 * 概述：本文是一篇知识图谱领域的前沿综述，文中给出了知识图谱的具体定义，并且从知识获取、知识表示、动态知识图谱、知识图谱的应用等多个角度围绕知识图谱技术进行了讨论。同时文章还对于知识图谱未来的发展提出了展望。
 * 链接：https://arxiv.org/abs/2002.00388
+* 是否有开源代码：无
+
+#### Knowledge Graphs
+* 作者：Aidan Hogan, et al. (Universidad de Chile)
+* 发表时间：2021
+* 发表于：Arxiv
+* 标签：Knowledge Graph
+* 概述：本文是一篇关于知识图谱的全面综述，详尽地阐述了包括综述、出版物在内的已有的知识图谱相关研究工作，并且梳理了知识图谱的生命周期的相关工作。
+* 链接：https://arxiv.org/pdf/2003.02320.pdf
+* 是否有开源代码：无
+
+#### Knowledge graph embedding: A survey of approaches and applications
+* 作者：Quan Wang, et al. (中科院信工所)
+* 发表时间：2017
+* 发表于：TKDE
+* 标签：Knowledge Graph, Representation Learning
+* 概述：本文聚焦于知识图谱的表示学习，全面梳理了相关的工作，首先围绕仅仅利用知识图谱本身信息的Trans系列的方法以及语义匹配的方法，然后介绍了利用额外信息的知识图谱表示学习方法，最后对于相关的应用进行了梳理与展望。
+* 链接：https://persagen.com/files/misc/Wang2017Knowledge.pdf
+* 是否有开源代码：无
+
+#### A review of relational machine learning for knowledge graphs
+* 作者：Nickel, et al. (Google)
+* 发表时间：2015
+* 发表于：Proceedings of the IEEE
+* 标签：Knowledge Graph, Relational Learning
+* 概述：本文聚焦于知识图谱的关系学习，全面梳理了相关的工作，以基于统计的关系学习方法、基于隐含特征的方法、基于图特征的方法和基于Markov random fields的方法几个角度对于知识图谱关系学习的相关工作进行了梳理，并且在最后梳理了该研究领域的应用，以及进行了总结与展望。
+* 链接：https://ieeexplore.ieee.org/abstract/document/7358050
 * 是否有开源代码：无
 
 ### Knowledge Graph - 相关前沿研究(\#TODO)
