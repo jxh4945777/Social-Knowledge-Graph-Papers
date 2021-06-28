@@ -89,6 +89,12 @@ Research about Social Knowledge Graph
     + [Multi-view Knowledge Graph Embedding for Entity Alignment](#multi-view-knowledge-graph-embedding-for-entity-alignment)
     + [Jointly Learning Entity and Relation Representations for Entity Alignment](#jointly-learning-entity-and-relation-representations-for-entity-alignment)
     + [A BERT-based Interaction Model For Knowledge Graph Alignment](#a-bert-based-interaction-model-for-knowledge-graph-alignment)
+    + [Social Network De-Anonymization and Privacy Inference with Knowledge Graph Model](#social-network-de-anonymization-and-privacy-inference-with-knowledge-graph-model)
+- [Social Knowledge Graph Construction](#social-knowledge-graph-construction)
+  * [Social Knowledge Graph Construction -- 相关前沿研究(2015-至今)](#social-knowledge-graph-construction-----------2015----)
+    + [SocioScope: A framework for understanding Internet of Social Knowledge](#socioscope--a-framework-for-understanding-internet-of-social-knowledge)
+    + [Extending SocioScope Framework for Generating Knowledge Graph from Social Data](#extending-socioscope-framework-for-generating-knowledge-graph-from-social-data)
+    + [Social Event Decomposition for Constructing Knowledge Graph](#social-event-decomposition-for-constructing-knowledge-graph)
 - [Content Feature of Social Knowledge Graph](#content-feature-of-social-knowledge-graph)
   * [Content Feature of Social Knowledge Graph -- 相关前沿研究(2017-至今)](#content-feature-of-social-knowledge-graph-----------2017----)
     + [Infusing Multi-Source Knowledge with Heterogeneous Graph Neural Network for Emotional Conversation Generation](#infusing-multi-source-knowledge-with-heterogeneous-graph-neural-network-for-emotional-conversation-generation)
@@ -118,8 +124,15 @@ Research about Social Knowledge Graph
 - [Others](#others)
 - [Related Datasets](#related-datasets)
 - [其他参考资料](#------)
+  * [大规模图分析相关数据集集合参考资料：](#------------------)
+    + [斯坦福SNAP开源数据集集合](#---snap-------)
+    + [斯坦福SNAP开源数据集集合](#---snap--------1)
+    + [Twitter开源数据集集合(Github项目)](#twitter--------github---)
+    + [知乎数据集(Github项目)](#------github---)
+    + [异质图相关数据集(Github项目)](#---------github---)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
+
 
 **【具体文献以及笔记】**
 
@@ -1017,6 +1030,50 @@ Research about Social Knowledge Graph
     * DBP15k
 * 是否有开源代码：有 (https://github.com/kosugi11037/bert-int)
 
+#### Social Network De-Anonymization and Privacy Inference with Knowledge Graph Model
+* 作者：Jianwei Qian, et al. (USTC)
+* 发表时间：2019
+* 发表于：IEEE Trans on Dependable and Secure Computing
+* 标签：Social network data publishing, attack and privacy preservation, knowledge graph
+* 概述：本文关注于隐私泄露行为分析，首先总结了现有的去匿名化工作有以下三点缺陷: (1)以往的工作仅仅关注于去匿名化的实验，而没有思考攻击者如何真正地获取用户隐私从而完成去匿名化； (2)以往的工作认为攻击者仅仅具有单一类型的数据，或仅仅了解网络的拓扑结构； (3)没有考虑到攻击者可能利用丰富的属性信息。 并且总结了三点挑战: (1)难以构建一个具有丰富表达性的模型，从而考虑到所有的攻击者先验知识；(2)难以建模隐私推理的完整过程；(3)难以量化隐私泄露程度。因此本文提出了一个利用知识图谱分析去匿名化以及隐私推理的模型，用于两步分析隐私泄露行为。本文在Google plus和Pokec数据集上，通过实验验证了模型的有效性。
+* 链接：https://ieeexplore.ieee.org/abstract/document/7911249
+* 相关数据集：
+    * Google Plus
+    * Pokec
+* 是否有开源代码：无
+
+
+## Social Knowledge Graph Construction
+
+### Social Knowledge Graph Construction -- 相关前沿研究(2015-至今)
+
+#### SocioScope: A framework for understanding Internet of Social Knowledge
+* 作者：Hoang Long Nguyen, et al. (Chung-Ang University)
+* 发表时间：2018
+* 发表于：Future Generation Computer Systems
+* 标签：SocioScope, Internet of Social Knowledge, Integrated framework
+* 概述：考虑到在线社交网络平台每天都产生大量的动态社交信息，为了对于这些信息加以有效率用，提出了SocialScope系统，旨在通过大量、动态的社交信息构建动态知识图谱，并且探讨了在该知识图谱上进行用户推断相关的应用。
+* 链接：https://dl.acm.org/doi/abs/10.1016/j.future.2018.01.064
+* 是否有开源代码：无
+
+#### Extending SocioScope Framework for Generating Knowledge Graph from Social Data
+* 作者：Hoang Long Nguyen, et al. (Chung-Ang University)
+* 发表时间：2018
+* 发表于：IEEE Conference on Signal-Image Technologies and Internet-Based System
+* 标签：Social Event, Knowledge Graph, SocioScope framework, Internet of Knowledge
+* 概述：本文和socioscope的原文整体motivation相同，简单扩展了原文的内容，详细对于利用社交数据构建知识图谱的过程进行了阐述。
+* 链接：https://ieeexplore.ieee.org/abstract/document/8706236
+* 是否有开源代码：无
+
+#### Social Event Decomposition for Constructing Knowledge Graph
+* 作者：Hoang Long Nguyen, et al. (Chung-Ang University)
+* 发表时间：2019
+* 发表于：Future Generation Computer Systems
+* 标签：Social event decomposition, Event-driven knowledge graph, SocioScope framework, Independent component analysis
+* 概述：本文同样是围绕socioscope展开，从利用大量动态社交数据进行事件抽取的角度进行了论述，首先对于社交数据中的事件做出了规范，并且在socioscope上进行了实验分析以及给出了结果的可视化。
+* 链接：https://www.sciencedirect.com/science/article/abs/pii/S0167739X19302493
+* 是否有开源代码：无
+
 
 ## Content Feature of Social Knowledge Graph
 
@@ -1269,6 +1326,27 @@ Research about Social Knowledge Graph
 * Network Repository：http://networkrepository.com/
 
 ## 其他参考资料
+### 大规模图分析相关数据集集合参考资料：
+#### 斯坦福SNAP开源数据集集合
+* 简介：斯坦福Jure Leskovec组开源的多个围绕社交网络、图分析的数据集。
+* 链接：https://snap.stanford.edu/data/
+
+#### 斯坦福SNAP开源数据集集合
+* 简介：斯坦福Jure Leskovec组开源的多个围绕社交网络、图分析的数据集。
+* 链接：https://snap.stanford.edu/data/
+
+#### Twitter开源数据集集合(Github项目)
+* 简介：Twitter相关的开源数据集。
+* 链接：https://github.com/shaypal5/awesome-twitter-data
+
+#### 知乎数据集(Github项目)
+* 简介：知乎相关的开源数据集(THU)。
+* 链接：https://github.com/THUIR/ZhihuRec-Dataset
+
+#### 异质图相关数据集(Github项目)
+* 简介：BUPT整理的HIN相关开源数据集。
+* 链接：(1) https://github.com/zechengz/hin-dataset   (2) https://github.com/librahu/HIN-Datasets-for-Recommendation-and-Network-Embedding
+
 ### 图神经网络相关学习/参考资料：
 #### 图与机器学习课程
 * 简介：斯坦福开设的本科课程，Jure Leskovec担任课程顾问。
