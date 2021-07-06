@@ -1,5 +1,6 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
+本项目是关于社交知识图谱的论文列表、笔记和数据集汇总。
 
 **key words**: 社交网络 (Social Network), 知识图谱 (Knowledge Graph), 社会计算 (Social Computing)
 
@@ -83,6 +84,7 @@ Research about Social Knowledge Graph
   * [Integration of Knowledge Graph and Social Network -- 综述](#integration-of-knowledge-graph-and-social-network------)
     + [A Benchmarking Study of Embedding-based Entity Alignment for Knowledge Graphs](#a-benchmarking-study-of-embedding-based-entity-alignment-for-knowledge-graphs)
     + [An Experimental Study of State-of-the-Art Entity Alignment Approaches](#an-experimental-study-of-state-of-the-art-entity-alignment-approaches)
+    + [User Identity Linkage across Online Social Networks: A Review](#user-identity-linkage-across-online-social-networks--a-review)
     + [面向网络大数据的知识融合方法综述](#----------------)
   * [Integration of Knowledge Graph and Social Network -- 相关前沿研究(2015-至今)](#integration-of-knowledge-graph-and-social-network-----------2015----)
     + [Bootstrapping Entity Alignment with Knowledge Graph Embedding](#bootstrapping-entity-alignment-with-knowledge-graph-embedding)
@@ -966,6 +968,15 @@ Research about Social Knowledge Graph
     * DBP15k
     * SRPRS
 * 是否有开源代码：有 (https://github.com/DexterZeng/EAE)
+
+#### User Identity Linkage across Online Social Networks: A Review
+* 作者：Kai Shu, et al. (Arizona State University)
+* 发表时间：2017
+* 发表于：SIGKDD 2017
+* 标签：User Identity Linkage, Social Network, Survey
+* 概述：本文是一片关于社交网络跨网络用户对齐的全面性综述。首先本文对于研究的意义进行了介绍，即 (1)有助于好友推荐；(2)增强信息跨网络流动；(3)分析网络的动态演化。对于研究的挑战进行了概括，即(1)用户简介数据不对称；(2)网络中用户产生的内容异构；(3)网络稀疏性，以及噪声。并且，本文对于跨网络用户对齐的问题进行了详细地定义。在此基础上，本文提出了通用地框架，即(1)特征(用户介绍、信息内容、网络特征)抽取；(2)模型预测。然后，本文对于研究相关的经典方法、数据集和评价指标进行了分析总结。最后，本问对于跨网络用户对齐从数据、评价以及动态性三方面的挑战进行了探讨，以及对于该研究方向进行了总结与展望。
+* 链接：http://www.cs.iit.edu/~kshu/files/kdd_exp_kai.pdf
+* 是否有开源代码：无
 
 #### 面向网络大数据的知识融合方法综述
 * 作者：Hailun Lin, et al. (中科院计算所)
