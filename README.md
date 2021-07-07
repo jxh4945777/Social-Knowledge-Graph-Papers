@@ -1,5 +1,6 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
+
 本项目是关于社交知识图谱的论文列表、笔记和数据集汇总。
 
 **key words**: 社交网络 (Social Network), 知识图谱 (Knowledge Graph), 社会计算 (Social Computing)
@@ -104,6 +105,8 @@ Research about Social Knowledge Graph
     + [Improving Conversational Recommender Systems via Knowledge Graph based Semantic Fusion](#improving-conversational-recommender-systems-via-knowledge-graph-based-semantic-fusion)
     + [Joint Representation Learning of Legislator and Legislation for Roll Call Prediction Fusion](#joint-representation-learning-of-legislator-and-legislation-for-roll-call-prediction-fusion)
 - [Social Relation Reasoning](#social-relation-reasoning)
+  * [Social Relation Reasoning -- 综述](#social-relation-reasoning------)
+    + [基于图像和视频信息的社交关系理解研究综述](#--------------------)
   * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
     + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
     + [TransNet: Translation-Based Network Representation Learning for Social Relation Extraction](#transnet--translation-based-network-representation-learning-for-social-relation-extraction)
@@ -116,6 +119,7 @@ Research about Social Knowledge Graph
     + [Graph Convolutional Networks on User Mobility Heterogeneous Graphs for Social Relationship Inference](#graph-convolutional-networks-on-user-mobility-heterogeneous-graphs-for-social-relationship-inference)
     + [Graph Structural-topic Neural Network](#graph-structural-topic-neural-network)
     + [Self-Supervised Multi-Channel Hypergraph Convolutional Network for Social Recommendation](#self-supervised-multi-channel-hypergraph-convolutional-network-for-social-recommendation)
+    + [在线社交网络中中群体影响力的建模与分析](#-------------------)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
@@ -134,7 +138,6 @@ Research about Social Knowledge Graph
     + [异质图相关数据集(Github项目)](#---------github---)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
-
 
 **【具体文献以及笔记】**
 
@@ -1139,6 +1142,17 @@ Research about Social Knowledge Graph
 
 ## Social Relation Reasoning
 
+### Social Relation Reasoning -- 综述
+
+#### 基于图像和视频信息的社交关系理解研究综述
+* 作者： 王正, et al. (BUPT)
+* 发表时间：2021
+* 发表于：计算机学报 2021
+* 标签：Social Relationship Understanding, Computer Vision, Survey
+* 概述：本文聚焦于通过图像和视频等社交网络中广泛存在的多模信息对于理解社交关系的帮助，对于该研究领域进行了全面地综述。首先对于基于图像、视频的社交关系理解相关定义进行了介绍，并且对于该研究进行了形式化地描述。然后设计了整体的研究过程框架，对于相关的研究工作进行了梳理，最后对于该研究邻域进行了展望。
+* 链接：http://cjc.ict.ac.cn/online/onlinepaper/wz-20216780932.pdf
+* 是否有开源代码：无
+
 ### Social Relation Reasoning -- 相关前沿研究(2017-至今)
 
 #### CANE: Context-Aware Network Embedding for Relation Modeling
@@ -1275,6 +1289,18 @@ Research about Social Knowledge Graph
     * Douban
     * Yelp
 * 是否有开源代码：有( https://github.com/Coder-Yu/RecQ )
+
+#### 在线社交网络中中群体影响力的建模与分析
+* 作者：孟青.  (东南大学)
+* 发表时间：2021
+* 发表于：计算机学报 2021
+* 标签：Online Social Network, Group Influence, Graph Neural Networks
+* 概述：本文聚焦于对于存在不同类型用户关系的社交网络进行群体中影响力分析，其核心思想是将社交网络中的边分为长期、静态且稳定的社交关系，以及短期、动态的交互。对此分别使用不同的特征映射函数，并且最终通过图注意力神经网络(GAT)进行融合与嵌入式表示，从而计算群体的影响力。
+* 链接：http://cjc.ict.ac.cn/online/onlinepaper/mq-20216780341.pdf
+* 相关数据集：
+    * 微博
+    * Twitter
+* 是否有开源代码：无
 
 ## Knowledge Graph (\#TODO)
 ### Knowledge Graph - 最新综述(\#TODO)
