@@ -73,8 +73,9 @@ Research about Social Knowledge Graph
     + [Relationship Prediction in Dynamic Heterogeneous Information Networks](#relationship-prediction-in-dynamic-heterogeneous-information-networks-1)
     + [Link Prediction on Dynamic Heterogeneous Information Networks](#link-prediction-on-dynamic-heterogeneous-information-networks-1)
     + [Heterogeneous Dynamic Graph Attention Network](#heterogeneous-dynamic-graph-attention-network)
-- [Social Network + Knowedge Graph](#social-network---knowedge-graph)
-  * [Social Network + Knowedge Graph -- 相关前沿研究(2015-至今)](#social-network---knowedge-graph-----------2015----)
+    + [Knowledge-aware coupled graph neural network for social recommendation](#knowledge-aware-coupled-graph-neural-network-for-social-recommendation)
+- [Social Knowledge Graph Definition](#social-knowledge-graph-definition)
+  * [Social Knowledge Graph Definition -- 相关前沿研究(2015-至今)](#social-knowledge-graph-definition-----------2015----)
     + [Incorporating Social Context and Domain Knowledge for Entity Recognition](#incorporating-social-context-and-domain-knowledge-for-entity-recognition)
     + [Multi-Modal Bayesian Embeddings for Learning Social Knowledge Graphs](#multi-modal-bayesian-embeddings-for-learning-social-knowledge-graphs)
     + [Constructing Knowledge Graph for Social Networks in A Deep and Holistic Way](#constructing-knowledge-graph-for-social-networks-in-a-deep-and-holistic-way)
@@ -93,6 +94,9 @@ Research about Social Knowledge Graph
     + [Jointly Learning Entity and Relation Representations for Entity Alignment](#jointly-learning-entity-and-relation-representations-for-entity-alignment)
     + [A BERT-based Interaction Model For Knowledge Graph Alignment](#a-bert-based-interaction-model-for-knowledge-graph-alignment)
     + [Social Network De-Anonymization and Privacy Inference with Knowledge Graph Model](#social-network-de-anonymization-and-privacy-inference-with-knowledge-graph-model)
+    + [SocialLink: Exploiting Graph Embeddings to Link DBpedia Entities to Twitter Profiles](#sociallink--exploiting-graph-embeddings-to-link-dbpedia-entities-to-twitter-profiles)
+    + [Type Prediction Combining Linked Open Data and Social Media](#type-prediction-combining-linked-open-data-and-social-media)
+    + [Tweeki: Linking Named Entities on Twitter to a Knowledge Graph](#tweeki--linking-named-entities-on-twitter-to-a-knowledge-graph)
 - [Social Knowledge Graph Construction](#social-knowledge-graph-construction)
   * [Social Knowledge Graph Construction -- 相关前沿研究(2015-至今)](#social-knowledge-graph-construction-----------2015----)
     + [SocioScope: A framework for understanding Internet of Social Knowledge](#socioscope--a-framework-for-understanding-internet-of-social-knowledge)
@@ -136,8 +140,12 @@ Research about Social Knowledge Graph
     + [Twitter开源数据集集合(Github项目)](#twitter--------github---)
     + [知乎数据集(Github项目)](#------github---)
     + [异质图相关数据集(Github项目)](#---------github---)
+  * [社交知识图谱开源项目](#----------)
+    + [SocialLink](#sociallink)
+    + [Tweeki](#tweeki)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
+
 
 **【具体文献以及笔记】**
 
@@ -869,9 +877,22 @@ Research about Social Knowledge Graph
     * DBLP
 * 是否有开源代码：无
 
-## Social Network + Knowedge Graph
+#### Knowledge-aware coupled graph neural network for social recommendation
+* 作者： Chao Huang, et al. (京东, 南科大)
+* 发表时间：2021
+* 发表于：AAAI 2021
+* 标签：Heterogeneous Graph, Social Recommendation, Dynamic Information
+* 概述：本文旨在探究用户社交关系、用户-商品关系以及商品-商品之间的关系对于社交推荐的影响，考虑到(1) 大部分现有工作忽略了商品与商品的关联性，比如同属于一个类别的商品会对用户的购买行为产生影响；(2) 现有的方法仅仅考虑了用户与商品之间单一维度的交互关系，忽略了在现实场景中用户与商品关系多样化的特性（e.g., 用户不同的评分，以及基于不同行为的交互；(3) 缺少有效地方法建模用户/商品之间局部和全局的关联性，本文设计了新的方法K-GCN。首先，该方法基于GNN的架构进行用户与商品间embedding的传递与更新。通过设计relation-aware的message passing的机制，K-GCN图神经网络的结构可以捕捉到用户与商品间多元化关系，从而加强用户与商品间关系建模。并且利用互信息的思想计算节点的local embedding和global embedding的信息，使embedding可以保留用户-商品的global信息，并且考虑到用户行为的动态性，加入了temporal encoding模块，用于动态建模用户的行为与兴趣。最终，本文实验证明多元关系对于社交推荐的增益，以及验证了该模型的有效性。
+* 链接：https://www.aaai.org/AAAI21Papers/AAAI-9069.HuangC.pdf
+* 相关数据集：
+    * Epinions
+    * Yelp
+    * E-Com
+* 是否有开源代码：有( https://github.com/xhcdream/KCGN )
 
-### Social Network + Knowedge Graph -- 相关前沿研究(2015-至今)
+## Social Knowledge Graph Definition
+
+### Social Knowledge Graph Definition -- 相关前沿研究(2015-至今)
 
 #### Incorporating Social Context and Domain Knowledge for Entity Recognition
 * 作者： Jie Tang, et al.(THUNLP)
@@ -940,7 +961,8 @@ Research about Social Knowledge Graph
     * LinkedIn-60k
     * LinkedIn-44M
 * 是否有开源代码：无
-* 
+
+
 ## Integration over Knowledge Graph and Social Network
 
 ### Integration of Knowledge Graph and Social Network -- 综述
@@ -1055,6 +1077,42 @@ Research about Social Knowledge Graph
     * Google Plus
     * Pokec
 * 是否有开源代码：无
+
+#### SocialLink: Exploiting Graph Embeddings to Link DBpedia Entities to Twitter Profiles
+* 作者：Yaroslav Nechaev, et al. (University of Trento)
+* 发表时间：2018
+* 发表于：Progress in Artificial Intelligence
+* 标签：Social network, Twitter, DBpedia
+* 概述：本文主要描述了SocialLink项目，该项目旨在将Twitter中的用户与DBpedia中的实体相连，构建社交网络与知识图谱的桥梁。具体来讲，本文通过Twitter提供的API，对于知识库出现的人名进行检索，然后再依据社交网络的用户表示学习所得到的embedding对于候选对的用户进行排序，最终进行连接。
+* 链接：https://cris.fbk.eu/bitstream/11582/317882/1/sociallink2018prai.pdf
+* 相关数据集：
+    * Twitter
+    * DBpedia
+* 是否有开源代码：http://sociallink.futuro.media/
+
+#### Type Prediction Combining Linked Open Data and Social Media
+* 作者：Yaroslav Nechaev, et al. (University of Trento)
+* 发表时间：2018
+* 发表于：CIKM 2018
+* 标签：Social network, Twitter, DBpedia, Type Prediction
+* 概述：本文是Social Link工作的后续，其旨在通过Social Link建立好的连接的基础上，考虑到社交网络中用户的行为信息能够一定程度上反应该用户的属性，设计了方法通过社交网络的信息对于DBpedia中的用户属性进行推理。具体来讲，本文使用到了社交网络中用户发表的文本信息、用户之间在社交网路中的交互信息，以及用户本身的简介信息，通过对于以上信息进行聚合以及嵌入式表示，将知识图谱中的属性推理转化为已知类别信息的多分类问题，继而实现对于知识图谱中缺失信息的补全。
+* 链接：https://dl.acm.org/doi/abs/10.1145/3269206.3271781
+* 相关数据集：
+    * Twitter
+    * DBpedia
+* 是否有开源代码：http://sociallink.futuro.media/
+
+#### Tweeki: Linking Named Entities on Twitter to a Knowledge Graph
+* 作者：Bahareh Harandizadeh, et al. (University of California Irvine)
+* 发表时间：2018
+* 发表于：CIKM 2018
+* 标签：Social network, Twitter, DBpedia, Type Prediction
+* 概述：本文旨在对于Twitter发布的文本内容中的信息进行抽取，对于mention提到的内容，将其连接到知识图谱中的实体。本文的核心贡献是：(1)提出了一个五年度的实体链接工具-Tweeki; (2)提出了Tweeki的数据集用于后续的研究; (3)提出了TweekiGold数据集用于验证实体链接方法的效果。
+* 链接：https://www.aclweb.org/anthology/2020.wnut-1.29.pdf
+* 相关数据集：
+    * Twitter
+    * DBpedia
+* 是否有开源代码：https://ucinlp.github.io/tweeki/
 
 
 ## Social Knowledge Graph Construction
@@ -1383,6 +1441,15 @@ Research about Social Knowledge Graph
 #### 异质图相关数据集(Github项目)
 * 简介：BUPT整理的HIN相关开源数据集。
 * 链接：(1) https://github.com/zechengz/hin-dataset   (2) https://github.com/librahu/HIN-Datasets-for-Recommendation-and-Network-Embedding
+
+### 社交知识图谱开源项目
+#### SocialLink
+* 简介：开源的社交知识图谱与社交网络链接项目(Twitter-DBpedia)，旨在将知识图谱的信息连接至对应的社交网络用户。
+* 链接：http://sociallink.futuro.media/
+
+#### Tweeki
+* 简介：开源的社交知识图谱与社交网络链接项目，旨在将Twitter中的mention连接至知识图谱中的实体。
+* 链接：https://ucinlp.github.io/tweeki/
 
 ### 图神经网络相关学习/参考资料：
 #### 图与机器学习课程
