@@ -34,6 +34,7 @@ Research about Social Knowledge Graph
     + [RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding](#rhine--relation-structure-aware-heterogeneous-information-network-embedding)
     + [TIMME: Twitter Ideology-detection via Multi-task Multi-relational Embedding](#timme--twitter-ideology-detection-via-multi-task-multi-relational-embedding)
     + [Knowledge Embedding Based Graph Convolutional Network](#knowledge-embedding-based-graph-convolutional-network)
+    + [User-as-Graph: User Modeling with Heterogeneous Graph Pooling for News Recommendation](#user-as-graph--user-modeling-with-heterogeneous-graph-pooling-for-news-recommendation)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
     + [Representation Learning for Dynamic Graphs: A Survey](#representation-learning-for-dynamic-graphs--a-survey)
@@ -426,6 +427,17 @@ Research about Social Knowledge Graph
     * WN
     * FB15K
 * 是否有开源代码：有( https://github.com/PlusRoss/KE-GCN )
+
+#### User-as-Graph: User Modeling with Heterogeneous Graph Pooling for News Recommendation
+* 作者： Chuhan Wu, et al. (MSRA, THU)
+* 发表时间：2021
+* 发表于：IJCAI 2021
+* 标签：News Recommendation, Graph Pooling, Heterogeneous Graph
+* 概述：本文旨在将用户的行为转化成为包含主题、新闻、实体的异质图，并在此基础上设计了异质图池化模型，将构建好的异质图转化为用户的向量表示，用于实现用户新闻的个性化推荐。本文在MIND新闻推荐数据集上取得了优于SOTA的成绩，证明了模型的有效性。
+* 链接：https://www.ijcai.org/proceedings/2021/0224.pdf
+* 相关数据集：
+    * MIND
+* 是否有开源代码：无
 
 ## Dynamic Graph Representation
 
