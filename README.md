@@ -34,6 +34,7 @@ Research about Social Knowledge Graph
     + [RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding](#rhine--relation-structure-aware-heterogeneous-information-network-embedding)
     + [TIMME: Twitter Ideology-detection via Multi-task Multi-relational Embedding](#timme--twitter-ideology-detection-via-multi-task-multi-relational-embedding)
     + [Knowledge Embedding Based Graph Convolutional Network](#knowledge-embedding-based-graph-convolutional-network)
+    + [Neural Graph Matching based Collaborative Filtering](#neural-graph-matching-based-collaborative-filtering)
     + [User-as-Graph: User Modeling with Heterogeneous Graph Pooling for News Recommendation](#user-as-graph--user-modeling-with-heterogeneous-graph-pooling-for-news-recommendation)
 - [Dynamic Graph Representation](#dynamic-graph-representation)
   * [Dynamic Graph Representation -- 最新综述](#dynamic-graph-representation--------)
@@ -427,6 +428,20 @@ Research about Social Knowledge Graph
     * WN
     * FB15K
 * 是否有开源代码：有( https://github.com/PlusRoss/KE-GCN )
+
+#### Neural Graph Matching based Collaborative Filtering
+* 作者： Yixin Su, et al. (University of Melbourne)
+* 发表时间：2021
+* 发表于：SIGIR 2021
+* 标签：Graph Matching, Collaborative Filtering
+* 概述：本文是一篇研究推荐系统中协同过滤的文章，考虑到以往的相关工作没有有效同时建模用户与物品之间的复杂交互，因此本文将用户-用户、用户-物品、物品-物品三种不同的关系建模成三种不同的图，并且通过图神经网络的方式进行表示学习，继而实现图匹配并且进行用户物品的推荐。
+* 链接：https://arxiv.org/pdf/2105.04067
+* 相关数据集：
+    * MovieLens
+    * Book-Crossing
+    * Taobao
+* 是否有开源代码：https://github.com/ruizhangai/GMCF_Neural_Graph_Matching_based_Collaborative_Filtering
+
 
 #### User-as-Graph: User Modeling with Heterogeneous Graph Pooling for News Recommendation
 * 作者： Chuhan Wu, et al. (MSRA, THU)
