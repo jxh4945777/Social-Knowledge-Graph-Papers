@@ -15,7 +15,8 @@ Research about Social Knowledge Graph
     + [Inductive representation learning on large graphs](#inductive-representation-learning-on-large-graphs)
     + [Anonymous Walk Embeddings](#anonymous-walk-embeddings)
 - [Heterogeneous Graph/Heterogeneous Information Network Representation](#heterogeneous-graph-heterogeneous-information-network-representation)
-  * [Heterogeneous Graph/Heterogeneous Information Network Representation - 最新综述](#heterogeneous-graph-heterogeneous-information-network-representation-------)
+  * [Heterogeneous Graph/Heterogeneous Information Network Representation - 经典论文/最新综述](#heterogeneous-graph-heterogeneous-information-network-representation------------)
+    + [Meta-Path-Based Search and Mining in Heterogeneous Information Networks](#meta-path-based-search-and-mining-in-heterogeneous-information-networks)
     + [Heterogeneous Network Representation Learning: A Unified Framework with Survey and Benchmark](#heterogeneous-network-representation-learning--a-unified-framework-with-survey-and-benchmark)
     + [Heterogeneous Network Representation Learning](#heterogeneous-network-representation-learning)
     + [异质信息网络分析与应用综述](#-------------)
@@ -207,8 +208,17 @@ Research about Social Knowledge Graph
 ## Heterogeneous Graph/Heterogeneous Information Network Representation
 异质图/异构图(Heterogeneous Graph) = 异质信息网络(Heterogeneous Information Network)
 
-### Heterogeneous Graph/Heterogeneous Information Network Representation - 最新综述
-该部分包括了异质图的最新综述论文
+### Heterogeneous Graph/Heterogeneous Information Network Representation - 经典论文/最新综述
+该部分包括了异质图的经典/最新综述论文
+
+#### Meta-Path-Based Search and Mining in Heterogeneous Information Networks
+* 作者： Yizhou Sun, et al.
+* 发表时间：2012
+* 发表于：TSINGHUA SCIENCE AND TECHNOLOGY
+* 标签：Heterogeneous Information Network
+* 概述：本文是一片介绍异质信息网络的开创性工作，其在提出了异质信息网络并介绍相关概念的基础上，对于常见的异质信息网络进行了举例，如学术网络（作者/论文/领域/机构...）、推特网络（用户/推特/HashTag/机构）、Flickr网络（图片/用户/标签/群组/评价）、健康网络（医生、病患、疾病、设备、治疗方式），以上异质信息网络都能相较于同质图更准确地建模真实世界的图结构信息。除此之外，本文对于异质信息网络的应用进行了全面地阐述，其中详细介绍了相似度搜索、关系预测、基于用户特征的聚类，并对未来的应用方向，如基于异质信息网络的传播分析、推荐、智能问答等进行了展望。
+* 链接：https://ieeexplore.ieee.org/ielx7/5971803/6574669/06574671.pdf
+* 是否有开源代码：无
 
 #### Heterogeneous Network Representation Learning: A Unified Framework with Survey and Benchmark
 * 作者： Carl Yang, et al.(UIUC韩家炜团队)
@@ -243,6 +253,7 @@ Research about Social Knowledge Graph
 * 概述：本文是一篇关于异质信息网络的最新中文综述，对于异质信息网络给出了明确的定义，并且对于现有异质信息网络的从网络结构的角度进行了归类，对于异质信息网络表示学习相关的工作也进行了归类为基于图分解的方法、基于随机游走的方法、基于编码器-解码器的方法以及基于图神经网络的方法。同时本文对于异质信息网络的应用进行了叙述，最后对于异质信息网络的发展提出了展望。
 * 链接：http://www.shichuan.org/doc/94.pdf
 * 是否有开源代码：有 https://github.com/BUPT-GAMMA/OpenHINE
+
 
 ### Heterogeneous Graph/Heterogeneous Information Network Representation - 相关前沿研究(2019 -至今)
 
