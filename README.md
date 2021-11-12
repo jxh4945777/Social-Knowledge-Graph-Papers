@@ -114,7 +114,7 @@ Research about Social Knowledge Graph
 - [Social Relation Reasoning](#social-relation-reasoning)
   * [Social Relation Reasoning -- 综述](#social-relation-reasoning------)
     + [基于图像和视频信息的社交关系理解研究综述](#--------------------)
-  * [Social Relation Reasoning -- 相关前沿研究(2017-至今)](#social-relation-reasoning-----------2017----)
+  * [Social Knowledge Graph Reasoning -- 相关前沿研究(2017-至今)](#social-knowledge-graph-reasoning-----------2017----)
     + [CANE: Context-Aware Network Embedding for Relation Modeling](#cane--context-aware-network-embedding-for-relation-modeling)
     + [TransNet: Translation-Based Network Representation Learning for Social Relation Extraction](#transnet--translation-based-network-representation-learning-for-social-relation-extraction)
     + [Social Relation Inference via Label Propagation](#social-relation-inference-via-label-propagation)
@@ -127,6 +127,7 @@ Research about Social Knowledge Graph
     + [Graph Structural-topic Neural Network](#graph-structural-topic-neural-network)
     + [Self-Supervised Multi-Channel Hypergraph Convolutional Network for Social Recommendation](#self-supervised-multi-channel-hypergraph-convolutional-network-for-social-recommendation)
     + [在线社交网络中中群体影响力的建模与分析](#-------------------)
+    + [Inferring Social Ties across Heterogeneous Networks](#inferring-social-ties-across-heterogeneous-networks)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
@@ -1249,7 +1250,7 @@ Research about Social Knowledge Graph
 * 链接：http://cjc.ict.ac.cn/online/onlinepaper/wz-20216780932.pdf
 * 是否有开源代码：无
 
-### Social Relation Reasoning -- 相关前沿研究(2017-至今)
+### Social Knowledge Graph Reasoning -- 相关前沿研究(2017-至今)
 
 #### CANE: Context-Aware Network Embedding for Relation Modeling
 * 作者： Cunchao Tu, et al.(THUNLP)
@@ -1396,6 +1397,21 @@ Research about Social Knowledge Graph
 * 相关数据集：
     * 微博
     * Twitter
+* 是否有开源代码：无
+
+#### Inferring Social Ties across Heterogeneous Networks
+* 作者：唐杰.  (清华大学)
+* 发表时间：2012
+* 发表于：清华大学学报 2013
+* 标签：Social Tie, Heterogeneous Network,  Bayesian Inference
+* 概述：本文聚焦于社交网络中社交关系的语义标注，通过援引三个经典社会学理论：社交平衡(Social Balance)、社会地位(Social Status)和社交结构洞(Social Hole)，用于从社会学的角度建模社交关系，并且在此基础上设计模型，实现跨网络的社交关系推理。本文通过大量实验验证了模型的有效性。
+* 链接：http://dx.doi.org/10.1145/2124295.2124382
+* 相关数据集：
+    * Epinions
+    * Slashdot
+    * Mobile
+    * Coauthor
+    * Enron
 * 是否有开源代码：无
 
 ## Knowledge Graph (\#TODO)
