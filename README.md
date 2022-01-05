@@ -128,6 +128,7 @@ Research about Social Knowledge Graph
     + [Self-Supervised Multi-Channel Hypergraph Convolutional Network for Social Recommendation](#self-supervised-multi-channel-hypergraph-convolutional-network-for-social-recommendation)
     + [在线社交网络中中群体影响力的建模与分析](#-------------------)
     + [Inferring Social Ties across Heterogeneous Networks](#inferring-social-ties-across-heterogeneous-networks)
+    + [融合时空行为与社交关系的用户轨迹识别模型](#--------------------)
 - [Knowledge Graph (\#TODO)](#knowledge-graph----todo-)
   * [Knowledge Graph - 最新综述(\#TODO)](#knowledge-graph----------todo-)
     + [A Survey on Knowledge Graphs: Representation, Acquisition and Applications](#a-survey-on-knowledge-graphs--representation--acquisition-and-applications)
@@ -149,7 +150,6 @@ Research about Social Knowledge Graph
     + [Tweeki](#tweeki)
   * [图神经网络相关学习/参考资料：](#---------------)
     + [图与机器学习课程](#--------)
-
 
 **【具体文献以及笔记】**
 
@@ -1412,6 +1412,19 @@ Research about Social Knowledge Graph
     * Mobile
     * Coauthor
     * Enron
+* 是否有开源代码：无
+
+#### 融合时空行为与社交关系的用户轨迹识别模型
+* 作者：张伟.  (华东师范大学, 之江实验室, THU)
+* 发表时间：2021
+* 发表于：计算机学报 2021
+* 标签：user trajectory identification; neural temporal point process; spatio-temporal sequence; social relation
+* 概述：这篇文章致力于有效利用轨迹时间戳序列和用户社交关系这两类被相关研究忽略的信息. 一方面时间戳信息能够缓解轨迹稀疏性，另一方面社交关系可以通过刻画用户（类别）之间相关性帮助用户表示学习. 为此，其提出了融合神经时间点过程与图神经网络的新模型NTPP-GNN，包含空间、时间、社交关系三个模块. 空间模块中，双向循环神经网络用来刻画地点间序列性；时间模块中，提出双向神经时间点过程从正反两个方向捕捉时间连续性，并以此促进轨迹的时间表征；社交关系模块中，图神经网络用于传播和学习用户表示. 最后, 这篇文章在三组数据集上进行实验验证了模型的有效性.
+* 链接：http://cjc.ict.ac.cn/online/onlinepaper/2zw-20211216155008.pdf
+* 相关数据集：
+    * Foursquare
+    * Gowalla
+    * Brightkite
 * 是否有开源代码：无
 
 ## Knowledge Graph (\#TODO)
