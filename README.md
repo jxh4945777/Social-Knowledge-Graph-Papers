@@ -1,7 +1,7 @@
 # Social-Knowledge-Graph-Papers
 Research about Social Knowledge Graph
 
-本项目是关于社交知识图谱的论文列表、笔记和数据集汇总。
+本项目是关于社交知识图谱的论文列表、笔记和数据集汇总。 
 
 **key words**: 社交网络 (Social Network), 知识图谱 (Knowledge Graph), 社会计算 (Social Computing)
 
